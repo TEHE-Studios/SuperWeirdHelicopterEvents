@@ -24,6 +24,25 @@ eHelicopter_PRESETS["id_name"] = {
 
 
 eHelicopter_PRESETS["Spiffocopter"] = {
+	presetProgression = {
+		["Spiffocopter_inviteOnly"] = 0,
+		["Spiffocopter_partyTime"] = 0.05,
+	}
+}
+
+eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {
+	crashType = {"Bell206SpiffoFuselage"},
+	hoverOnTargetDuration = {2000,2250},
+	scrapAndParts = {["vehicleSection"]="Bell206SpiffoTail"},
+	crew = {"SpiffoBoss",100,0,
+			"SpiffoBoss",10,0,
+			"SpiffoBoss",1,0,},
+	dropPackages = {"SpiffoBurger"},
+	announcerVoice = "Spiffo",
+	dropItems = {["SWH.SpiffoInvite"]=100},
+}
+
+eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 	crashType = {"Bell206SpiffoFuselage"},
 	hoverOnTargetDuration = {2000,2250},
 	scrapAndParts = {["vehicleSection"]="Bell206SpiffoTail"},
@@ -33,7 +52,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	dropPackages = {"SpiffoBurger"},
 	announcerVoice = "Spiffo",
-
+	dropItems = {["SWH.SpiffoInvite"]=100},
 }
 
 eHelicopter_PRESETS["UFO"] = {
