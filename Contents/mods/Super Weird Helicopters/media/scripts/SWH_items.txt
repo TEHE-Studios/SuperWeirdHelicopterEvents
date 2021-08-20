@@ -13,7 +13,7 @@ module SWH
     {
         Weight = 0.1,
         Type = Normal,
-        DisplayName = IRS 1040 Form,
+        DisplayName = Invitation,
         Icon = spiffoinvite,
         Map = media/ui/content/SpiffoInvite.png,
     }
