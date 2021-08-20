@@ -1,9 +1,10 @@
 version=1
+id=2580001162
 title=Expanded Helicopter Events: Super Weird Edition
 description= [h2][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458631365]THIS MOD REQUIRES EXPANDED HELICOPTER EVENTS[/url][/h2]
 description=
 description= [h2]This sub-mod is not meant for a standard Zomboid experience! Enemies will sprint/do things that standard zombies do not - they are however balanced. [b]Back up your saves if you're uncertain![/b][/h2]
-description= 
+description=
 description= [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 description=
 description= [h2]Credits:[/h2]
@@ -17,5 +18,5 @@ description= [H1]To report issues, make suggestions, provide translations:
 description= Visit the [url=https://github.com/ChuckTheSheep/SuperWeirdHelicopterEvents]GITHUB[/url][/H1]
 description= [b]If you're having an issue or encountering errors, please supply a error log:
 description= The file can be found in: `C:\Users\<username>\Zomboid\console.txt`[/b]
-description=
+tags=Build 41;Clothing/Armor;Hardmode;Misc;Silly/Fun;Vehicles
 visibility=public
