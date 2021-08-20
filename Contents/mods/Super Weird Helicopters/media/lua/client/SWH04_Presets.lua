@@ -39,7 +39,7 @@ eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {
 			"SpiffoBoss",1,0,},
 	dropPackages = {"SpiffoBurger"},
 	announcerVoice = "Spiffo",
-	dropItems = {["SWH.SpiffoInvite"]=100},
+	dropItems = {["SWH.SpiffoInvite"]=250},
 }
 
 eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
@@ -47,12 +47,12 @@ eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 	hoverOnTargetDuration = {2000,2250},
 	scrapAndParts = {["vehicleSection"]="Bell206SpiffoTail"},
 	crew = {"SpiffoBoss",100,0,
-			"SpiffoBoss",20,0,
-			"SpiffoBoss",5,0,},
+			"SpiffoBoss",10,0,
+			"SpiffoBoss",1,0,},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	dropPackages = {"SpiffoBurger"},
 	announcerVoice = "Spiffo",
-	dropItems = {["SWH.SpiffoInvite"]=100},
+	dropItems = {["SWH.SpiffoInvite"]=250},
 }
 
 eHelicopter_PRESETS["UFO"] = {
