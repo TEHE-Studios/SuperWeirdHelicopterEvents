@@ -5,7 +5,16 @@ module SWH
 		Weight = 0.1,
 		Type = Normal,
 		DisplayName = IRS 1040 Form,
-		Icon = Flyer,
+		Icon = 1040,
 		Map = media/ui/content/1040form.png,
 	}
+
+    item SpiffoInvite
+    {
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = IRS 1040 Form,
+        Icon = spiffoinvite,
+        Map = media/ui/content/SpiffoInvite.png,
+    }
 }
