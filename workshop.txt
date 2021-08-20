@@ -1,0 +1,21 @@
+version=1
+title=Expanded Helicopter Events: Super Weird Edition
+description= [h2]THIS MOD REQUIRES EXPANDED HELICOPTER EVENTS[/h2]
+description=
+description= [h2]This sub-mod is not meant for a standard Zomboid experience! Enemies will sprint/do things that standard zombies do not - they are however balanced. [b]Back up your saves if you're uncertain![/b][/h2]
+description= 
+description= [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=
+description= [h2]Credits:[/h2]
+description= [h3]Consider supporting your favorite modders![/h3]
+description= Shark - Models, Art
+description= [url=https://ko-fi.com/chuckleberryfinn]Chuck [img]https://i.imgur.com/TO5DVAt.png[/img][/url] - Programming, Art
+description= Raven & Gabby - Sound, Voiceover
+description= [url=https://ko-fi.com/jadedp]Jade [img]https://i.imgur.com/TO5DVAt.png[/img][/url] - Voiceover
+description=
+description= [H1]To report issues, make suggestions, provide translations:
+description= Visit the [url=]GITHUB[/url][/H1]
+description= [b]If you're having an issue or encountering errors, please supply a error log:
+description= The file can be found in: `C:\Users\<username>\Zomboid\console.txt`[/b]
+description=
+visibility=public
