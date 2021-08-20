@@ -1,4 +1,4 @@
-version=1.2
+version=1
 id=2580001162
 title=Expanded Helicopter Events: Super Weird Edition
 description= [h2][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458631365]THIS MOD REQUIRES EXPANDED HELICOPTER EVENTS[/url][/h2]
