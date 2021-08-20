@@ -142,7 +142,7 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 		--print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
 		zombie:DoZombieStats()
-		zombie:setHealth(zombie:getHealth()*1000001)
+		zombie:setHealth(zombie:getHealth()*100)
 		zombie:setReanimatedPlayer(false)
 
 	else
@@ -151,7 +151,7 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 		if zombie:isCrawling() then
 			zombie:toggleCrawling()
 		end
-		zombie:setHealth(zombie:getHealth()*1000001)
+		zombie:setHealth(zombie:getHealth()*100)
 
 		local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
 		if zombie:isOnFire() then
@@ -295,7 +295,7 @@ function eHelicopter_zombieAI.onDead_nemesis(zombie, player, bodyPart, weapon)
 		return
 	end
 
-	zombie:setHealth(zombie:getHealth()*1000001)
+	zombie:setHealth(zombie:getHealth()*100)
 	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
 	if currentFireDamage < eHelicopter_zombieAI.nemesis_burnTime then
 		zombie:setOnDeathDone(false)
