@@ -71,14 +71,19 @@ eHelicopter_PRESETS["UFO"] = {
 }
 
 eHelicopter_PRESETS["IRS"] = {
+	presetProgression = {
+		["IRS_Wave1"] = 0,
+		["IRS_Wave2"] = 0.2,
+		["IRS_Wave3"] = 0.5,
+	}
+}
+
+eHelicopter_PRESETS["IRS_Wave1"] = {
 	crashType = {"Bell206IRSFuselage"},
 	hoverOnTargetDuration = {2000,2250},
 	scrapAndParts = {["vehicleSection"]="Bell206IRSTail"},
-	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
-			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
-			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
-			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
-			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,},
+	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
+			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
 	attackDelay = 1000,
 	attackSpread = 4,
 	speed = 0.06,
@@ -90,6 +95,54 @@ eHelicopter_PRESETS["IRS"] = {
 		["attackSingle"] = "eHeli_bolt_action_fire_single",
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
 		},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	announcerVoice = "IRS",
+}
+
+eHelicopter_PRESETS["IRS_Wave2"] = {
+	crashType = {"Bell206IRSFuselage"},
+	hoverOnTargetDuration = {2000,2250},
+	scrapAndParts = {["vehicleSection"]="Bell206IRSTail"},
+	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
+			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
+			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
+			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
+	attackDelay = 1000,
+	attackSpread = 4,
+	speed = 0.06,
+	attackHitChance = 65,
+	attackDamage = 35,
+	hostilePreference = "IsoPlayer",
+	dropItems = {["SWH.TenFortyForm"]=400},
+	eventSoundEffects = {
+		["attackSingle"] = "eHeli_bolt_action_fire_single",
+		["attackLooped"] = "eHeli_bolt_action_fire_single",
+	},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	announcerVoice = "IRS",
+}
+
+eHelicopter_PRESETS["IRS_Wave3"] = {
+	crashType = {"Bell206IRSFuselage"},
+	hoverOnTargetDuration = {2000,2250},
+	scrapAndParts = {["vehicleSection"]="Bell206IRSTail"},
+	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
+			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
+			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
+			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
+			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
+			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
+	attackDelay = 1000,
+	attackSpread = 4,
+	speed = 0.06,
+	attackHitChance = 65,
+	attackDamage = 35,
+	hostilePreference = "IsoPlayer",
+	dropItems = {["SWH.TenFortyForm"]=400},
+	eventSoundEffects = {
+		["attackSingle"] = "eHeli_bolt_action_fire_single",
+		["attackLooped"] = "eHeli_bolt_action_fire_single",
+	},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	announcerVoice = "IRS",
 }
