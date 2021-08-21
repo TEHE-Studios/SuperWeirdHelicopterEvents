@@ -3,7 +3,6 @@ Events.OnCustomUIKey.Add(function(key)
 		if key == Keyboard.KEY_1 then DEBUG_TESTS.eHeliEventsOnSchedule()--DEBUG_TESTS.testAllLines()
 		elseif key == Keyboard.KEY_2 then DEBUG_TESTS.raiseTheDead()
 		elseif key == Keyboard.KEY_3 then
-			---@type eHelicopter heli
 			local heli1 = getFreeHelicopter("Spiffocopter")
 			heli1:launch()
 			DEBUG_TESTS.moveHeliCloser(heli1)
