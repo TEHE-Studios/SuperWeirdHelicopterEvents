@@ -141,6 +141,7 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
+		zombie:changeSpeed(3)
 		zombie:DoZombieStats()
 		zombie:setHealth(zombie:getHealth()*100)
 		zombie:setReanimatedPlayer(false)
