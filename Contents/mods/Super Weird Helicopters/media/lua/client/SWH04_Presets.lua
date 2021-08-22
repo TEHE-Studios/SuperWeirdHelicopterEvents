@@ -56,6 +56,10 @@ eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 }
 
 eHelicopter_PRESETS["UFO"] = {
+	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1}
+}
+
+eHelicopter_PRESETS["UFOTourists"] = {
 	crashType = {"UFO"},
 	hoverOnTargetDuration = {2000,2250},
 	crew = {"AlienTourist",100,0,
@@ -63,6 +67,22 @@ eHelicopter_PRESETS["UFO"] = {
 			"AlienTourist",30,0,
 			"AlienTourist",15,0,
 			"AlienTourist",5,0, },
+	speed = 1.3,
+	topSpeedFactor = 2,
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	scrapAndParts = false,
+	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
+	addedCrashChance = 33,
+}
+
+eHelicopter_PRESETS["UFORednecks"] = {
+	crashType = {"UFO"},
+	hoverOnTargetDuration = {2000,2250},
+	crew = {"AlienRedneck",100,0,
+			"AlienRedneck",75,0,
+			"AlienRedneck",30,0,
+			"AlienRedneck",15,0,
+			"AlienRedneck",5,0, },
 	speed = 1.3,
 	topSpeedFactor = 2,
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
