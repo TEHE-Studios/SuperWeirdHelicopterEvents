@@ -26,6 +26,10 @@
 			<m_items> <!-- Flip Flops -->
 		<itemGUID>46780aae-03ef-45d7-a0e8-36278f328576</itemGUID>
 		    </m_items>
+			<m_items> <!-- Fanny Pack -->
+			<probability>0.5</probability>
+		<itemGUID>48b63e1d-0846-407d-9007-2fdabb58eba2</itemGUID>
+		    </m_items>
 			<m_items> <!-- Visor -->
 			<probability>0.2</probability>
 		<itemGUID>aea918c3-0928-404f-a24e-43c4b28cc640</itemGUID>
