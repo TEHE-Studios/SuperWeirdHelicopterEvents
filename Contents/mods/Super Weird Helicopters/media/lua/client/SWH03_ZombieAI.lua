@@ -292,15 +292,23 @@ eHelicopter_zombieAI.nemesis_burnTime = 3000
 ---@param zombie IsoObject | IsoGameCharacter | IsoZombie
 ---@param player IsoObject | IsoGameCharacter | IsoPlayer
 function eHelicopter_zombieAI.onDead_nemesis(zombie, player, bodyPart, weapon)
-	if not zombie then
-		return
-	end
-
 	zombie:setHealth(zombie:getHealth()*100)
 	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
 	if currentFireDamage < eHelicopter_zombieAI.nemesis_burnTime then
 		zombie:setOnDeathDone(false)
 		table.insert(eHelicopter_zombieAI.reviveEvents,{time=getTimestampMs()+2000,AI_ID="nemesis",location=zombie:getSquare()})
+	end
+end
+
+
+---@param zombie IsoObject | IsoGameCharacter | IsoZombie
+---@param player IsoObject | IsoGameCharacter | IsoPlayer
+function eHelicopter_zombieAI.onDead_gottaGoFast(zombie, player, bodyPart, weapon)
+	if ZombRand(100) <= 25 then
+		zombie:getInventory():AddItems("Base.AlienPowerCells", ZombRand(1,4))
+	end
+	if ZombRand(1000) <= 1 then
+		zombie:getInventory():AddItem("Base.AlienBlaster")
 	end
 end
 
