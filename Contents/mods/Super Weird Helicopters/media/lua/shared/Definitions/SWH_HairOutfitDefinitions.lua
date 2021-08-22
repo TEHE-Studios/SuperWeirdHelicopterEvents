@@ -7,14 +7,13 @@ local alien = { outfit = "AlienTourist", haircut = "Bald:100", beard = "None:100
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alien)
 
 local alienRedneck = { outfit = "AlienRedneck", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
-table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alien)
+table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
 
 local taxman = { outfit = "TaxMan", haircut = "Buzzcut:50;Short:50", beard = "None:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, taxman)
 
 local RJ = { outfit = "RobertJohnson", haircut = "Short:100", beard = "None:100", haircutColor = "0.16,0.08,0.02:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, RJ)
-
 
 local SpiffoBoss = { outfit = "SpiffoBoss", haircut = "None:100", beard = "None:100", haircutColor = "0,0,0:0" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, SpiffoBoss)
