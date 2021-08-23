@@ -18,11 +18,15 @@ Events.OnCustomUIKey.Add(function(key)
 			DEBUG_TESTS.moveHeliCloser(heli3)
 
 		elseif key == Keyboard.KEY_6 then --DEBUG_TESTS.launch_news_chopper()
-			local heli3 = getFreeHelicopter("UFO")
+			local heli3 = getFreeHelicopter("UFOTourists")
 			heli3:launch()
 			DEBUG_TESTS.moveHeliCloser(heli3)
 
-		elseif key == Keyboard.KEY_7 then DEBUG_TESTS.launch_increasingly_hostile()
+		elseif key == Keyboard.KEY_7 then --DEBUG_TESTS.launch_news_chopper()
+			local heli3 = getFreeHelicopter("UFORednecks")
+			heli3:launch()
+			DEBUG_TESTS.moveHeliCloser(heli3)
+
 		elseif key == Keyboard.KEY_8 then DEBUG_TESTS.launch_increasingly_helpful()
 		elseif key == Keyboard.KEY_9 then DEBUG_TESTS.launch_police_heli()
 		elseif key == Keyboard.KEY_0 then DEBUG_TESTS.launchBaseHeli()
