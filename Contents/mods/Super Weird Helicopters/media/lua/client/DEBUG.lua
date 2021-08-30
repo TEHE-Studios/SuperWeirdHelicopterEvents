@@ -1,5 +1,5 @@
 Events.OnCustomUIKey.Add(function(key)
-	if getDebug() and (eHelicopterSandbox.config.debugTests==true) then
+	if getPlayer() and getDebug() and (eHelicopterSandbox.config.debugTests==true) then
 		if key == Keyboard.KEY_1 then DEBUG_TESTS.eHeliEventsOnSchedule()--DEBUG_TESTS.testAllLines()
 		elseif key == Keyboard.KEY_2 then DEBUG_TESTS.raiseTheDead()
 		elseif key == Keyboard.KEY_3 then DEBUG_TESTS.ToggleAllCrash()
