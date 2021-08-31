@@ -12,17 +12,6 @@ end
 Events.OnGameBoot.Add(eHeliEventsinit)
 
 
-local sandboxOptionsEnd_override = sandboxOptionsEnd
-function sandboxOptionsEnd()
-	loadAnnouncersToConfig()
-	sandboxOptionsEnd_override()
-	if twitchIntegrationPresets then
-		applyTwitchIntegration()
-	end
-end
-Events.OnGameBoot.Add(sandboxOptionsEnd())
-
-
 ---Preset list, only include variables being changed.
 ---variables can be found in Main Variables file, at the top, fields = variables
 eHelicopter_PRESETS = eHelicopter_PRESETS or {}
