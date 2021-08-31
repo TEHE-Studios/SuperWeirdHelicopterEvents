@@ -53,14 +53,3 @@ eHelicopter_announcers["IRS"] = {
 		["IRS9"] = {13500, "IRS9"},
 		["IRS10"] = {11000, "IRS10"},
 	} }
-
-
-local sandboxOptionsEnd_override = sandboxOptionsEnd
-function sandboxOptionsEnd()
-	loadAnnouncersToConfig()
-	sandboxOptionsEnd_override()
-	if twitchIntegrationPresets then
-		applyTwitchIntegration()
-	end
-end
-Events.OnGameBoot.Add(sandboxOptionsEnd())
