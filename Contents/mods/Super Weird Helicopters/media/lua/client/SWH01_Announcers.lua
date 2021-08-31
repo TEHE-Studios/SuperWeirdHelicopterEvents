@@ -11,7 +11,6 @@ eHelicopter_announcers["name of announcer"] = {
 	 } }
 
 ]]
-sandboxOptionsEnd(false)
 
 eHelicopter_announcers["Spiffo"] = {
 	["LeaveOutOfRandomSelection"] = true,
@@ -55,5 +54,13 @@ eHelicopter_announcers["IRS"] = {
 		["IRS10"] = {11000, "IRS10"},
 	} }
 
-loadAnnouncersToConfig()
-sandboxOptionsEnd(true)
+
+local sandboxOptionsEnd_override = sandboxOptionsEnd
+function sandboxOptionsEnd()
+	loadAnnouncersToConfig()
+	sandboxOptionsEnd_override()
+	if twitchIntegrationPresets then
+		applyTwitchIntegration()
+	end
+end
+Events.OnGameBoot.Add(sandboxOptionsEnd())
