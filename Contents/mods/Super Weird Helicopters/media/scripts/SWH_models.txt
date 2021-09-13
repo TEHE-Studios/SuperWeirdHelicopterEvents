@@ -1,0 +1,29 @@
+module Base
+{
+	    model 1040_WorldItem
+	{
+		mesh = WorldItems/SheetOfPaper,
+		texture = WorldItems/1040,
+		scale = 0.02,
+	}
+
+		model SpiffoInvite_WorldItem
+	{
+		mesh = WorldItems/SheetOfPaper,
+		texture = WorldItems/SpiffoInvite,
+		scale = 0.02,
+	}
+	
+	    model Marla
+    {
+        mesh = weapons/2handed/Marla,
+		texture = weapons/2handed/Marla
+    }	
+	
+	    model AlienBlaster
+    {
+        mesh = Weapons/1Handed/AlienBlaster,
+        texture = Weapons/1Handed/AlienBlaster,
+    }
+
+}
