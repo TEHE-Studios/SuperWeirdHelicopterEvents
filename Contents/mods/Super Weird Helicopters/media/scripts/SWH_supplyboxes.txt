@@ -1,15 +1,11 @@
 module SWH
 {
-	imports
-	{
-		Base
-	}
 
 	item BurgerBox
 	{
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
-		DisplayName		=	Supply Box,
+		DisplayName		=	Spiffo Box,
 		WorldStaticModel = SpiffoBox_WorldItem,
 	}
 
@@ -17,7 +13,7 @@ module SWH
 	{
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
-		DisplayName		=	Supply Box,
+		DisplayName		=	Spiffo Box,
 		WorldStaticModel = SpiffoBox_WorldItem,
 	}
 
@@ -25,7 +21,7 @@ module SWH
 	{
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
-		DisplayName		=	Supply Box,
+		DisplayName		=	Spiffo Box,
 		WorldStaticModel = SpiffoBox_WorldItem,
 	}
 
@@ -34,6 +30,6 @@ module SWH
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
 		DisplayName		=	Half-Frozen Box,
-		IceCreamBox = IceCreamBox_WorldItem,
+		WorldStaticModel = IceCreamBox_WorldItem,
 	}
 }

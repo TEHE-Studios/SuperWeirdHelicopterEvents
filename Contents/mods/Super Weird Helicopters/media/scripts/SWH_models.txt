@@ -1,5 +1,5 @@
-module SWH
-
+module Base
+{
 	    model 1040_WorldItem
 	{
 		mesh = WorldItems/SheetOfPaper,
@@ -18,14 +18,14 @@ module SWH
 	{
 		mesh = WorldItems/SupplyBox,
 		texture = WorldItems/SpiffoBox,
-		scale = 0.02,
+		scale = 1.00,
 	}
 
 		model IceCreamBox_WorldItem
 	{
 		mesh = WorldItems/SupplyBox,
 		texture = WorldItems/IceCreamBox,
-		scale = 0.02,
+		scale = 1.00,
 	}
 	
 	    model Marla
