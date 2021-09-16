@@ -38,6 +38,10 @@ module Base
     {
         mesh = Weapons/1Handed/AlienBlaster,
         texture = Weapons/1Handed/AlienBlaster,
+        attachment world
+        		{
+        			rotate = 0.0000 -90.0000 0.0000,
+        		}
     }
 
 }
