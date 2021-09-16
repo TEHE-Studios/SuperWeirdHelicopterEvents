@@ -88,7 +88,7 @@ module SWH
 		ConditionLowerChanceOneIn	=	3,
 		Weight	=	2.3,
 		SplatNumber	=	1,
-		PushBackMod	=	0.3,
+		PushBackMod	=	1,
 		SubCategory	=	Swinging,
 		ConditionMax	=	50,
 		MaxHitCount	=	3,
@@ -107,13 +107,12 @@ module SWH
         TwoHandWeapon = TRUE,
         BreakSound  =   BreakWoodItem,
         TreeDamage  =   0,
-        CriticalChance	=	1,
-        CritDmgMultiplier = 1,
-        MinDamage	=	.1,
-        MaxDamage	=	1,
+        CriticalChance	=	10,
+        CritDmgMultiplier = 5,
+        MinDamage	=	1,
+        MaxDamage	=	2,
         BaseSpeed = 0.2,
-		WorldStaticModel = Marla_WorldItem,
-        AttachmentType = GuitarElectricBassBlack,
+        AttachmentType = BigBlade,
     }
 
 }
