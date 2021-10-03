@@ -4,10 +4,21 @@ eHeliEvents_init["preset"] = {["ID"]=nil, ["heliDay"]=configStartDay, ["heliStar
 --]]
 function eHeliEventsinit()
 	eHeliEvents_init = eHeliEvents_init or {}
-	eHeliEvents_init["Spiffocopter"] = {["ID"]=nil, ["heliDay"]=configStartDay, ["heliStart"]=nil}
-	eHeliEvents_init["UFO"] = {["ID"]=nil, ["heliDay"]=configStartDay, ["heliStart"]=nil}
-	eHeliEvents_init["IRS"] = {["ID"]=nil, ["heliDay"]=configStartDay, ["heliStart"]=nil}
-	eHeliEvents_init["TISCreamery"] = {["ID"]=nil, ["heliDay"]=configStartDay, ["heliStart"]=nil}
+
+	local startDay = 0
+	local cutOffDay = 30
+	if oldGameVersion then
+		startDay = eHelicopterSandbox.config.startDay
+		cutOffDay = eHelicopterSandbox.config.cutOffDay
+	else
+		startDay = SandboxVars.ExpandedHeli.StartDay
+		cutOffDay = SandboxVars.ExpandedHeli.CutOffDay
+	end
+
+	eHeliEvents_init["Spiffocopter"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,3), ["heliStart"]=nil}
+	eHeliEvents_init["UFO"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,3), ["heliStart"]=nil}
+	eHeliEvents_init["IRS"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,3), ["heliStart"]=nil}
+	eHeliEvents_init["TISCreamery"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,3), ["heliStart"]=nil}
 end
 Events.OnGameBoot.Add(eHeliEventsinit)
 
