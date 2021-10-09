@@ -84,6 +84,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 	scrapAndParts = false,
 	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
 	addedCrashChance = 33,
+	flightHours = {19,24},
 }
 
 eHelicopter_PRESETS["UFORednecks"] = {
@@ -100,6 +101,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 	scrapAndParts = false,
 	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
 	addedCrashChance = 33,
+	flightHours = {19,24},
 }
 
 eHelicopter_PRESETS["IRS"] = {
