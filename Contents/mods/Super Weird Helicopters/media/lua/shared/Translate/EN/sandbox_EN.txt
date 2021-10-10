@@ -1,7 +1,5 @@
 Sandbox_EN = {
 
-    Sandbox_ExpandedHeliSWH = "Expanded Helicopter Events: Super Weird Edition!",
-
     Sandbox_ExpandedHeli_EventSPIFFO = "Spiffo",
     Sandbox_ExpandedHeli_EventSPIFFO_tooltip = "How frequent Spiffo celebrates his birthday.",
 
