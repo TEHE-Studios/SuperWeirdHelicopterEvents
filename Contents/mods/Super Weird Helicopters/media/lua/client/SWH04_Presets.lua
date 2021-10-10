@@ -88,7 +88,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 }
 
 eHelicopter_PRESETS["UFORednecks"] = {
-	crashType = {"UFO"},
+	crashType = {"UFORedneck"},
 	hoverOnTargetDuration = {2000,2250},
 	crew = {"AlienRedneck",100,0,
 			"AlienRedneck",75,0,
