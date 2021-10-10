@@ -1,0 +1,16 @@
+Sandbox_EN = {
+
+    Sandbox_ExpandedHeliSWH = "Expanded Helicopter Events: Super Weird Edition!",
+
+    Sandbox_ExpandedHeli_EventSPIFFO = "Spiffo",
+    Sandbox_ExpandedHeli_EventSPIFFO_tooltip = "How frequent Spiffo celebrates his birthday.",
+
+    Sandbox_ExpandedHeli_EventTISCREAM = "The Indiestone Creameries",
+    Sandbox_ExpandedHeli_EventTISCREAM_tooltip = "How frequent RJ comes to pay a visit.",
+
+    Sandbox_ExpandedHeli_EventIRS = "IRS",
+    Sandbox_ExpandedHeli_EventIRS_tooltip = "How frequent you avoid paying your taxes.",
+
+    Sandbox_ExpandedHeli_EventUFO = "UFO",
+    Sandbox_ExpandedHeli_EventUFO_tooltip = "How frequent you want to believe.",
+}
