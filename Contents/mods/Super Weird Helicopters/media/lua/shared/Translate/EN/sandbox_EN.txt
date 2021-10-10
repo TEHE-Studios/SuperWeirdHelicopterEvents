@@ -1,10 +1,10 @@
 Sandbox_EN = {
 
-    Sandbox_ExpandedHeli_EventSPIFFO = "Spiffo",
-    Sandbox_ExpandedHeli_EventSPIFFO_tooltip = "How frequent Spiffo celebrates his birthday.",
+    Sandbox_ExpandedHeli_EventSpiffocopter = "Spiffo",
+    Sandbox_ExpandedHeli_EventSpiffocopter_tooltip = "How frequent Spiffo celebrates his birthday.",
 
-    Sandbox_ExpandedHeli_EventTISCREAM = "The Indiestone Creameries",
-    Sandbox_ExpandedHeli_EventTISCREAM_tooltip = "How frequent RJ comes to pay a visit.",
+    Sandbox_ExpandedHeli_EventTISCreamery = "The Indiestone Creameries",
+    Sandbox_ExpandedHeli_EventTISCreamery_tooltip = "How frequent RJ comes to pay a visit.",
 
     Sandbox_ExpandedHeli_EventIRS = "IRS",
     Sandbox_ExpandedHeli_EventIRS_tooltip = "How frequent you avoid paying your taxes.",
