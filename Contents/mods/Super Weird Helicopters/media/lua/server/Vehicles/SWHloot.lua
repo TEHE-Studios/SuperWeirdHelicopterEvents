@@ -104,6 +104,7 @@ VehicleDistributions.UFORedneckTrunk = {
         "BeerCan", 10,
         "BeerCan", 10,
         "BeerCan", 10,
+    }
 }
 
 VehicleDistributions.TISTrunk = {
