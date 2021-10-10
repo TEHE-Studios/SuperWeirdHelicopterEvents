@@ -2,25 +2,25 @@ VERSION = 1,
 
 option ExpandedHeli.Frequency_IRS
 {
-	type = enum, numValues = 6, default = 4,
+	type = enum, numValues = 6, default = 3,
 	page = ExpandedHeli, translation = ExpandedHeli_EventIRS,
 	valueTranslation = ExpandedHeli_Frequency,
 }
 option ExpandedHeli.Frequency_SPIFFO
 {
-	type = enum, numValues = 6, default = 4,
+	type = enum, numValues = 6, default = 3,
 	page = ExpandedHeli, translation = ExpandedHeli_EventSPIFFO,
 	valueTranslation = ExpandedHeli_Frequency,
 }
 option ExpandedHeli.Frequency_TISCREAM
 {
-	type = enum, numValues = 6, default = 4,
+	type = enum, numValues = 6, default = 3,
 	page = ExpandedHeli, translation = ExpandedHeli_EventTISCREAM,
 	valueTranslation = ExpandedHeli_Frequency,
 }
 option ExpandedHeli.Frequency_UFO
 {
-	type = enum, numValues = 6, default = 4,
+	type = enum, numValues = 6, default = 3,
 	page = ExpandedHeli, translation = ExpandedHeli_EventUFO,
 	valueTranslation = ExpandedHeli_Frequency,
 }
