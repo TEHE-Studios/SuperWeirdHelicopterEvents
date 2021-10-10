@@ -74,7 +74,7 @@ VehicleDistributions.UFORedneckSeat = {
 }
 
 VehicleDistributions.UFORedneckTrunk = {
-    rolls = 6,
+    rolls = 10,
     items ={
         "BeerCan", 10,
         "BeerCan", 10,
@@ -83,14 +83,27 @@ VehicleDistributions.UFORedneckTrunk = {
         "BeerCan", 10,
         "BeerCan", 10,
         "BeerCan", 10,
-        "EHE.AlienBlaster", 7,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-    }
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
+        "BeerCan", 10,
 }
 
 VehicleDistributions.TISTrunk = {
