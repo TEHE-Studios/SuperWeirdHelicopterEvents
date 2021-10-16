@@ -45,6 +45,7 @@ eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {
 	crashType = {"Bell206SpiffoFuselage"},
 	hoverOnTargetDuration = {2000,2250},
 	scrapAndParts = {["vehicleSection"]="Bell206SpiffoTail"},
+	eventSoundEffects = {["flightSound"] = "eHelicopter"},
 	crew = {"SpiffoBoss",100,0,
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
@@ -61,6 +62,7 @@ eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	eventSoundEffects = {["flightSound"] = "eHelicopter"},
 	dropPackages = {"SpiffoBurger"},
 	announcerVoice = "Spiffo",
 	dropItems = {["SWH.SpiffoInvite"]=250},
@@ -128,6 +130,7 @@ eHelicopter_PRESETS["IRS_Wave1"] = {
 	eventSoundEffects = {
 		["attackSingle"] = "eHeli_bolt_action_fire_single",
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
+		["flightSound"] = "eHelicopter",
 		},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	announcerVoice = "IRS",
@@ -151,6 +154,7 @@ eHelicopter_PRESETS["IRS_Wave2"] = {
 	eventSoundEffects = {
 		["attackSingle"] = "eHeli_bolt_action_fire_single",
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
+		["flightSound"] = "eHelicopter",
 	},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	announcerVoice = "IRS",
@@ -176,6 +180,7 @@ eHelicopter_PRESETS["IRS_Wave3"] = {
 	eventSoundEffects = {
 		["attackSingle"] = "eHeli_bolt_action_fire_single",
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
+		["flightSound"] = "eHelicopter",
 	},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	announcerVoice = "IRS",
@@ -190,7 +195,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 			"RobertJohnson",50,0,
 			"RobertJohnson",25,0,
 			"RobertJohnson",25,0, },
-	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy"},
+	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy",},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	scrapAndParts = false,
 }
