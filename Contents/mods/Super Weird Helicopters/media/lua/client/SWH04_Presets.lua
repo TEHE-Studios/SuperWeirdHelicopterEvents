@@ -44,7 +44,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {
 	crashType = {"Bell206SpiffoFuselage"},
 	hoverOnTargetDuration = {2000,2250},
-	scrapAndParts = {"Bell206SpiffoTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2,},
+	scrapAndParts = {"Bell206SpiffoTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
 	eventSoundEffects = {["flightSound"] = "eHelicopter"},
 	crew = {"SpiffoBoss",100,0,
 			"SpiffoBoss",10,0,
@@ -57,7 +57,7 @@ eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {
 eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 	crashType = {"Bell206SpiffoFuselage"},
 	hoverOnTargetDuration = {2000,2250},
-	scrapAndParts = {"Bell206SpiffoTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2,},
+	scrapAndParts = {"Bell206SpiffoTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
 	crew = {"SpiffoBoss",100,0,
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
@@ -117,7 +117,7 @@ eHelicopter_PRESETS["IRS"] = {
 eHelicopter_PRESETS["IRS_Wave1"] = {
 	crashType = {"Bell206IRSFuselage"},
 	hoverOnTargetDuration = {2000,2250},
-	scrapAndParts = {"Bell206IRSTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2,},
+	scrapAndParts = {"Bell206IRSTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
 	attackDelay = 1000,
@@ -139,7 +139,7 @@ eHelicopter_PRESETS["IRS_Wave1"] = {
 eHelicopter_PRESETS["IRS_Wave2"] = {
 	crashType = {"Bell206IRSFuselage"},
 	hoverOnTargetDuration = {2000,2250},
-	scrapAndParts = {"Bell206IRSTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2,},
+	scrapAndParts = {"Bell206IRSTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
@@ -163,7 +163,7 @@ eHelicopter_PRESETS["IRS_Wave2"] = {
 eHelicopter_PRESETS["IRS_Wave3"] = {
 	crashType = {"Bell206IRSFuselage"},
 	hoverOnTargetDuration = {2000,2250},
-	scrapAndParts = {"Bell206IRSTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2,},
+	scrapAndParts = {"Bell206IRSTail", "EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
