@@ -58,5 +58,5 @@ eHelicopter_announcers["Aliens"] = {
 	["LeaveOutOfRandomSelection"] = true,
 	["Lines"] = {
 		["AlienAck1"] = {6550, "AlienAck1"},
-		["AlienAck2"] = {6500, "AlienAck1"},
+		["AlienAck2"] = {6500, "AlienAck2"},
 	} }
