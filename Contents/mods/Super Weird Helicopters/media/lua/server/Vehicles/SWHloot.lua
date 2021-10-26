@@ -43,6 +43,9 @@ VehicleDistributions.UFOSeat = {
         "EHE.AlienPowerCells", 10,
         "EHE.AlienPowerCells", 10,
         "EHE.AlienPowerCells", 10,
+        "EHE.StrangeNewspaper", 5,
+        "EHE.StrangeNewspaper", 5,
+        "EHE.StrangeNewspaper", 5,
     }
 }
 
@@ -56,6 +59,9 @@ VehicleDistributions.UFOTrunk = {
         "EHE.AlienPowerCells", 10,
         "EHE.AlienPowerCells", 10,
         "EHE.AlienPowerCells", 10,
+        "EHE.StrangeNewspaper", 5,
+        "EHE.StrangeNewspaper", 5,
+        "EHE.StrangeNewspaper", 5,
     }
 }
 

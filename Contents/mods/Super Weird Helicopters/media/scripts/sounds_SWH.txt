@@ -89,11 +89,15 @@ module Base {
     
     sound AlienAck1 {
         category = EHE-Weird: Voice Lines, loop = false, is3D = true,
-        clip { file = media/sound/AlienAck1.ogg, distanceMax = 500, volume = 3.0, } }
+        clip { file = media/sound/AlienAck1.ogg, distanceMax = 300, volume = 3.0, } }
 
     sound AlienAck2 {
         category = EHE-Weird: Voice Lines, loop = false, is3D = true,
-        clip { file = media/sound/AlienAck2.ogg, distanceMax = 500, volume = 3.0, } }
+        clip { file = media/sound/AlienAck2.ogg, distanceMax = 300, volume = 3.0, } }
+
+    sound AlienAck3 {
+        category = EHE-Weird: Voice Lines, loop = false, is3D = true,
+        clip { file = media/sound/AlienAck3.ogg, distanceMax = 300, volume = 3.0, } }
 
 
     sound SpiffoGiggle {

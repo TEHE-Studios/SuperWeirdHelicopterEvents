@@ -1,3 +1,4 @@
+
 module SWH
 {
     item TenFortyForm
@@ -18,5 +19,15 @@ module SWH
         Icon = spiffoinvite,
         Map = media/ui/content/SpiffoInvite.png,
         WorldStaticModel = SpiffoInvite_WorldItem,
+    }
+
+    item StrangeNewspaper
+    {
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Strange Newspaper,
+        Icon = StrangeNewspaper,
+        Map = media/ui/content/StrangeNewspaper.png,
+        WorldStaticModel = Newspaper_Ground,
     }
 }
