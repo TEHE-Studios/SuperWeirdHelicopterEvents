@@ -87,6 +87,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
 	addedCrashChance = 33,
 	flightHours = {19,24},
+	announcerVoice = "Aliens",
 }
 
 eHelicopter_PRESETS["UFORednecks"] = {
@@ -104,6 +105,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
 	addedCrashChance = 33,
 	flightHours = {19,24},
+	announcerVoice = "Aliens",
 }
 
 eHelicopter_PRESETS["IRS"] = {

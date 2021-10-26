@@ -86,6 +86,14 @@ module Base {
     sound IRS10 {
         category = EHE-Weird: Voice Lines, loop = false, is3D = true,
         clip { file = media/sound/IRS10.ogg, distanceMax = 500, volume = 3.0, } }
+    
+    sound AlienAck1 {
+        category = EHE-Weird: Voice Lines, loop = false, is3D = true,
+        clip { file = media/sound/AlienAck1.ogg, distanceMax = 500, volume = 3.0, } }
+
+    sound AlienAck2 {
+        category = EHE-Weird: Voice Lines, loop = false, is3D = true,
+        clip { file = media/sound/AlienAck2.ogg, distanceMax = 500, volume = 3.0, } }
 
 
     sound SpiffoGiggle {

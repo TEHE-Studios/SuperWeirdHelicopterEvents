@@ -53,3 +53,10 @@ eHelicopter_announcers["IRS"] = {
 		["IRS9"] = {13500, "IRS9"},
 		["IRS10"] = {11000, "IRS10"},
 	} }
+
+eHelicopter_announcers["Aliens"] = {
+	["LeaveOutOfRandomSelection"] = true,
+	["Lines"] = {
+		["AlienAck1"] = {6550, "AlienAck1"},
+		["AlienAck2"] = {6500, "AlienAck1"},
+	} }
