@@ -25,29 +25,17 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/SWH/Vehicle_Bell206SpiffoCrashed,
+			texture = Vehicles/SWH/Vehicle_Bell206SpiffoDamaged,
 		}
 
-		textureMask = Vehicle_Bell206Police_mask,
-		extents = 0.7524 2.0257 2.2122,
-		mass = 200,
-		physicsChassisShape = 0.7524 0.9646 2.2186,
-		centerOfMassOffset = 0.0000 0.5016 0.0032,
-		engineForce = 3600,
-		engineQuality = 60,
-		engineLoudness = 55,
-		maxSpeed = 70f,
-		brakingForce = 1,
-		stoppingMovementForce = 2.0f,
-		rollInfluence = 1.0f,
-		steeringIncrement = 0.03,
-		steeringClamp = 0.3,
-		suspensionStiffness = 40,
-		suspensionCompression = 2.83,
-		suspensionDamping = 2.88,
-		maxSuspensionTravelCm = 10,
-		suspensionRestLength = 0.2,
-		wheelFriction = 4.0f,
+		textureMask = Vehicle_Bell206_mask,
+		textureShadow = highlights/vehicleShadowHelicopterFuselage,
+		extents = 0.7524 2.0257 1.8006,
+		mass = 1500,
+		physicsChassisShape = 0.7524 0.9646 1.7942,
+		centerOfMassOffset = 0.0000 0.5016 0.2572,
+		shadowExtents = 0.7524 1.7364,
+		shadowOffset = 0.0000 0.2798,
 		frontEndHealth = 150,
 		rearEndHealth = 150,
 		seats = 4,
@@ -119,22 +107,22 @@ module Base
 
 		area SeatFrontLeft
 		{
-			xywh = 0.6174 0.3923 0.4823 0.4823,
+			xywh = 0.6174 0.8264 0.4823 0.4823,
 		}
 
 		area SeatFrontRight
 		{
-			xywh = -0.6174 0.3923 0.4823 0.4823,
+			xywh = -0.6174 0.8264 0.4823 0.4823,
 		}
 
 		area SeatRearLeft
 		{
-			xywh = 0.6174 -0.0900 0.4823 0.4823,
+			xywh = 0.6174 0.3441 0.4823 0.4823,
 		}
 
 		area SeatRearRight
 		{
-			xywh = -0.6174 -0.0900 0.4823 0.4823,
+			xywh = -0.6174 0.3441 0.4823 0.4823,
 		}
 
 		template = Seat/part/SeatFrontLeft,

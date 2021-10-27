@@ -25,10 +25,10 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/SWH/Vehicle_Bell206IRSCrashed,
+			texture = Vehicles/SWH/Vehicle_Bell206IRSDamaged,
 		}
 
-		textureMask = Vehicle_Bell206LBMW_mask,
+		textureMask = Vehicle_Bell206_mask,
 		extents = 0.3923 0.9582 1.2862,
 		mass = 100,
 		physicsChassisShape = 0.3859 0.9646 1.2926,
