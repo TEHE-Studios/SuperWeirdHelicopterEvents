@@ -149,6 +149,13 @@ VehicleDistributions.SpiffoBurger = {
     }
 }
 
+VehicleDistributions.MCSupplyDrop = {
+    rolls = 64,
+    items ={
+        "Base.Dirtbag", 1000,
+    }
+}
+
 VehicleDistributions.Bell206IRS = {
 	
     SeatFrontLeft = VehicleDistributions.Bell206IRSSeat;
@@ -190,10 +197,14 @@ VehicleDistributions.IceCreamTrunk = {
 
 --Supply Drop
 VehicleDistributions.SpiffoBurger = {
-	
-    TruckBed = VehicleDistributions.SpiffoBurger;
 
-}    
+    TruckBed = VehicleDistributions.SpiffoBurger;
+}
+
+VehicleDistributions.MCSupplyDrop = {
+
+    TruckBed = VehicleDistributions.MCSupplyDrop;
+}
 
 --Distribution
 
@@ -207,3 +218,4 @@ distributionTable["TISIceCreamTruck"] = { Normal = VehicleDistributions.IceCream
 
 distributionTable["SpiffoBurger"] = { Normal = VehicleDistributions.SpiffoBurger; }
 
+distributionTable["MCSupplyDrop"] = { Normal = VehicleDistributions.MCSupplyDrop; }

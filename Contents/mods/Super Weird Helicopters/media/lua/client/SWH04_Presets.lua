@@ -201,3 +201,5 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	scrapAndParts = false,
 }
+
+eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
