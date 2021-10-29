@@ -88,6 +88,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 	addedCrashChance = 33,
 	flightHours = {19,24},
 	announcerVoice = "Aliens",
+	eventMarkerIcon = "media/ui/markerUFO.png",
 }
 
 eHelicopter_PRESETS["UFORednecks"] = {
@@ -106,6 +107,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 	addedCrashChance = 33,
 	flightHours = {19,24},
 	announcerVoice = "Aliens",
+	eventMarkerIcon = "media/ui/markerUFO.png",
 }
 
 eHelicopter_PRESETS["IRS"] = {
