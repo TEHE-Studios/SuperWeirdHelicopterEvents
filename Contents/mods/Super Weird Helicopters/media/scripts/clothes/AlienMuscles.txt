@@ -3,7 +3,6 @@ module SWH
     item AlienSkin
 	{
 	Type = Clothing,
-	DisplayName = Alien Muscles,
 	ClothingItem = AlienMuscles,
 	CanHaveHoles = False,
 	BodyLocation= Jacket,
