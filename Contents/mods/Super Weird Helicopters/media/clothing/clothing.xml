@@ -42,8 +42,20 @@
 		<m_Top>false</m_Top>
 		<m_Pants>false</m_Pants>
 		<m_AllowTopTint>false</m_AllowTopTint>		
+		<m_items> <!-- Alien Skin -->
+			<itemGUID>d5768fec-f732-4e4b-ad50-193e55d6400f</itemGUID>
+		</m_items>
 		<m_items> <!-- Alien Muscles -->
 			<itemGUID>527f5df2-3abc-4803-9fa9-fdac590d0f0e</itemGUID>
+		</m_items>
+		<m_items> <!-- Sport Shorts -->
+		    <itemGUID>e22e4bfa-f550-4e5a-a380-5eaad6b7111cc</itemGUID>
+		</m_items>
+		<m_items> <!-- Socks -->
+		    <itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
+	    </m_items>
+		<m_items> <!-- Red Sneakers -->
+		    <itemGUID>b6bb377a-6b18-407a-8e9f-edf949fb1fe1</itemGUID>
 		</m_items>
 	</m_MaleOutfits>
 
