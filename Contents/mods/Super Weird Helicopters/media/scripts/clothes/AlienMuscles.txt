@@ -5,6 +5,7 @@ module SWH
 	Type = Clothing,
 	DisplayName = Alien Muscles,
 	ClothingItem = AlienMuscles,
-	BodyLocation= TankTop,
+	CanHaveHoles = False,
+	BodyLocation= Jacket,
 	}
 }

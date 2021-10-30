@@ -4,6 +4,7 @@ module Base
 	{
 	Type = Clothing,
 	ClothingItem = AlienSkin,
+	DisplayName = ayylmao,
 	CanHaveHoles = False,
 	BodyLocation=TankTop,
 	}
