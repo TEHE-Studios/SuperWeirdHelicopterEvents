@@ -60,7 +60,7 @@ eHelicopter_announcers["Aliens"] = {
 		["AlienAck"] = {2500, "AlienAck"},
 	} }
 
-eHelicopter_announcers["Frat House Aliens"] = {
+eHelicopter_announcers["FratAliens"] = {
 		["LeaveOutOfRandomSelection"] = true,
 		["Lines"] = {
 			["AlienAck"] = {2500, "AlienAck"},

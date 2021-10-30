@@ -127,7 +127,7 @@ eHelicopter_PRESETS["UFOFratBoys"] = {
 	["additionalFlightSound"] = "assblastUSA"},
 	addedCrashChance = 33,
 	flightHours = {19,24},
-	announcerVoice = "Aliens",
+	announcerVoice = "FratAliens",
 	eventMarkerIcon = "media/ui/markerUFO.png",
 }
 
