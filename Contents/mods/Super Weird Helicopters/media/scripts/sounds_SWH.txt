@@ -44,7 +44,7 @@ module Base {
 
     sound assBlastUSA {
         category = EHE-Weird: Voice Lines, loop = true, is3D = true,
-        clip { file = media/sound/assblastusa.ogg, distanceMax = 750, volume = 1.0, } }
+        clip { file = media/sound/assblastusa.ogg, distanceMax = 750, volume = 0.7, } }
 
 
     sound IRS1 {
@@ -90,9 +90,9 @@ module Base {
 
     sound AlienAck {
         category = EHE-Weird: Voice Lines, loop = false, is3D = true,
-        clip { file = media/sound/AlienAck1.ogg, distanceMax = 300, volume = 0.5, }
-        clip { file = media/sound/AlienAck2.ogg, distanceMax = 300, volume = 0.5, }
-        clip { file = media/sound/AlienAck3.ogg, distanceMax = 300, volume = 0.5, } }
+        clip { file = media/sound/AlienAck1.ogg, distanceMax = 300, volume = 0.3, }
+        clip { file = media/sound/AlienAck2.ogg, distanceMax = 300, volume = 0.3, }
+        clip { file = media/sound/AlienAck3.ogg, distanceMax = 300, volume = 0.3, } }
 
 
     sound SpiffoGiggle {
