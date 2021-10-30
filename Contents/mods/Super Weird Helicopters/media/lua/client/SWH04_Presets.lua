@@ -124,7 +124,7 @@ eHelicopter_PRESETS["UFOFratBoys"] = {
 	scrapAndParts = false,
 	eventSoundEffects = {
 		["flightSound"] = "AlienUFOFlight",
-		["additionalFlightSound"] = "assblastUSA"
+		["additionalFlightSound"] = "assBlastUSA"
 		},
 	addedCrashChance = 33,
 	flightHours = {19,24},
