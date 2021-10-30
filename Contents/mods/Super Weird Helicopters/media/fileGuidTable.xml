@@ -62,6 +62,11 @@
 	</files>
 
 	<files>
+	<path>media/clothing/clothingItems/AlienMuscles.xml</path>
+	<guid>527f5df2-3abc-4803-9fa9-fdac590d0f0e</guid>
+	</files>
+	
+	<files>
 	<path>media/clothing/clothingItems/WhiteMale.xml</path>
 	<guid>ccd1e523-7e92-4f6e-a5f4-0b4841cb15fe</guid>
 	</files>
