@@ -48,8 +48,12 @@
 		<m_items> <!-- Alien Muscles -->
 			<itemGUID>527f5df2-3abc-4803-9fa9-fdac590d0f0e</itemGUID>
 		</m_items>
+		<m_items> <!-- Baseball Cap (Reversed) -->
+			<probability>0.6</probability>
+		    <itemGUID>d90d4976-d993-4fae-ad78-f5a4fcf05366</itemGUID>
+		</m_items>
 		<m_items> <!-- Sport Shorts -->
-		    <itemGUID>e22e4bfa-f550-4e5a-a380-5eaad6b7111cc</itemGUID>
+		    <itemGUID>e22e4bfa-f550-4e5a-a380-5eaad6b7111c</itemGUID>
 		</m_items>
 		<m_items> <!-- Socks -->
 		    <itemGUID>ebea15c8-99b3-4e20-905b-d22cf82b8217</itemGUID>
