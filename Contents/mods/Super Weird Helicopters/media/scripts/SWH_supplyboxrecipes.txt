@@ -8,10 +8,10 @@ module SWH
     recipe Open Supplies
     {
        BurgerBox=1,
-       keep [EHE_OpenBox.CanOpenBoxes],
+       keep [EHE_Recipe.CanOpenBoxes],
        Result:Spiffo=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.BURGERBOX,
+       OnCreate:EHE_Recipe.BURGERBOX,
        Time:70.0,
        Sound:OpenBox,
     }
@@ -19,10 +19,10 @@ module SWH
     recipe Open Supplies
     {
        MerchBox=1,
-       keep [EHE_OpenBox.CanOpenBoxes],
+       keep [EHE_Recipe.CanOpenBoxes],
        Result:Spiffo=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.MERCHBOX,
+       OnCreate:EHE_Recipe.MERCHBOX,
        Time:70.0,
        Sound:OpenBox,
     }
@@ -30,10 +30,10 @@ module SWH
     recipe Open Supplies
     {
        CostumeBox=1,
-       keep [EHE_OpenBox.CanOpenBoxes],
+       keep [EHE_Recipe.CanOpenBoxes],
        Result:Spiffo=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.COSTUMEBOX,
+       OnCreate:EHE_Recipe.COSTUMEBOX,
        Time:70.0,
        Sound:OpenBox,
     }
@@ -41,10 +41,10 @@ module SWH
       recipe Open Supplies
     {
        IceCreamBox=1,
-       keep [EHE_OpenBox.CanOpenBoxes],
+       keep [EHE_Recipe.CanOpenBoxes],
        Result:MeltedIceCream=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.ICECREAMBOX,
+       OnCreate:EHE_Recipe.ICECREAMBOX,
        Time:70.0,
        Sound:OpenBox,
     }
@@ -56,7 +56,7 @@ module SWH
        BurgerBox=1,
        Result:Spiffo=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.BURGERBOX,
+       OnCreate:EHE_Recipe.BURGERBOX,
        Tooltip:Would be faster to open with something sharp.,
        Time:210.0,
        Sound:OpenBox,
@@ -67,7 +67,7 @@ module SWH
        MerchBox=1,
        Result:Spiffo=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.MERCHBOX,
+       OnCreate:EHE_Recipe.MERCHBOX,
        Tooltip:Would be faster to open with something sharp.,
        Time:210.0,
        Sound:OpenBox,
@@ -78,7 +78,7 @@ module SWH
        CostumeBox=1,
        Result:Spiffo=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.COSTUMEBOX,
+       OnCreate:EHE_Recipe.COSTUMEBOX,
        Tooltip:Would be faster to open with something sharp.,
        Time:210.0,
        Sound:OpenBox,
@@ -89,7 +89,7 @@ module SWH
        IceCreamBox=1,
        Result:MeltedIceCream=1,
        RemoveResultItem:true,
-       OnCreate:EHE_OpenBox.ICECREAMBOX,
+       OnCreate:EHE_Recipe.ICECREAMBOX,
        Tooltip:Would be faster to open with something sharp.,
        Time:210.0,
        Sound:OpenBox,
