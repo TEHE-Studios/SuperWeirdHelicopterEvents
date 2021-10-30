@@ -9,5 +9,5 @@
 	<m_AttachBone></m_AttachBone>
 	<m_Masks>0</m_Masks>
 	<m_Masks>1</m_Masks>
-	<textureChoices>clothes/body/AlienMuscles</textureChoices>
+	<textureChoices>clothes/body/AlienSkin</textureChoices>
 </clothingItem>
