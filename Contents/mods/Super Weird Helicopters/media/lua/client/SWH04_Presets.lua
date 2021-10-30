@@ -69,7 +69,7 @@ eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 }
 
 eHelicopter_PRESETS["UFO"] = {
-	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1}
+	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1,"UFOFratBoys",1,}
 }
 
 eHelicopter_PRESETS["UFOTourists"] = {
@@ -109,6 +109,28 @@ eHelicopter_PRESETS["UFORednecks"] = {
 	announcerVoice = "Aliens",
 	eventMarkerIcon = "media/ui/markerUFO.png",
 }
+
+eHelicopter_PRESETS["UFOFratBoys"] = {
+	crashType = {"UFO"},
+	hoverOnTargetDuration = {2000,2250},
+	crew = {"AlienBeefo",100,0,
+			"AlienBeefo",75,0,
+			"AlienBeefo",30,0,
+			"AlienBeefo",15,0,
+			"AlienBeefo",5,0, },
+	speed = 1.3,
+	topSpeedFactor = 2,
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	scrapAndParts = false,
+	eventSoundEffects = 
+	{["flightSound"] = "AlientUFOFlight",
+	["additionalFlightSound"] = "assblastUSA"},
+	addedCrashChance = 33,
+	flightHours = {19,24},
+	announcerVoice = "Aliens",
+	eventMarkerIcon = "media/ui/markerUFO.png",
+}
+
 
 eHelicopter_PRESETS["IRS"] = {
 	presetProgression = {

@@ -44,7 +44,7 @@ module Base {
 
     sound assBlastUSA {
         category = EHE-Weird: Voice Lines, loop = true, is3D = true,
-        clip { file = media/sound/assblastusa.ogg, distanceMax = 500, volume = 2.0, } }
+        clip { file = media/sound/assblastusa.ogg, distanceMax = 500, volume = 1.3, } }
 
 
     sound IRS1 {
