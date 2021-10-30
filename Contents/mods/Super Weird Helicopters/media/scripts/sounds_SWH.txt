@@ -19,7 +19,7 @@ module Base {
         clip { file = media/sound/vehicle_cream3.ogg, distanceMax = 500, volume = 2.0, }
         clip { file = media/sound/vehicle_cream4.ogg, distanceMax = 500, volume = 2.0, } }
 
-    sound AlientUFOFlight {
+    sound AlienUFOFlight {
         category = EHE: Main, loop = true, is3D = true,
         clip { file = media/sound/alien_ufo_flight.ogg, distanceMax = 500, volume = 1.6, } }
 

@@ -84,7 +84,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 	topSpeedFactor = 2,
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	scrapAndParts = false,
-	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
+	eventSoundEffects = {["flightSound"] = "AlienUFOFlight"},
 	addedCrashChance = 33,
 	flightHours = {19,24},
 	announcerVoice = "Aliens",
@@ -103,7 +103,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 	topSpeedFactor = 2,
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	scrapAndParts = false,
-	eventSoundEffects = {["flightSound"] = "AlientUFOFlight"},
+	eventSoundEffects = {["flightSound"] = "AlienUFOFlight"},
 	addedCrashChance = 33,
 	flightHours = {19,24},
 	announcerVoice = "Aliens",
@@ -122,9 +122,10 @@ eHelicopter_PRESETS["UFOFratBoys"] = {
 	topSpeedFactor = 2,
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
 	scrapAndParts = false,
-	eventSoundEffects = 
-	{["flightSound"] = "AlientUFOFlight",
-	["additionalFlightSound"] = "assblastUSA"},
+	eventSoundEffects = {
+		["flightSound"] = "AlienUFOFlight",
+		["additionalFlightSound"] = "assblastUSA"
+		},
 	addedCrashChance = 33,
 	flightHours = {19,24},
 	announcerVoice = "FratAliens",
