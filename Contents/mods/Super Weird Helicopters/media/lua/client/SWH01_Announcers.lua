@@ -61,7 +61,7 @@ eHelicopter_announcers["Aliens"] = {
 	} }
 
 eHelicopter_announcers["FratAliens"] = {
-		["LeaveOutOfRandomSelection"] = true,
-		["Lines"] = {
-			["AlienAck"] = {2500, "AlienAck"},
+	["LeaveOutOfRandomSelection"] = true,
+	["Lines"] = {
+		["AlienAck"] = {2500, "AlienAck"},
 	} }
