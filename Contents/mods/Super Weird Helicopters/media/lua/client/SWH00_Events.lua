@@ -9,10 +9,8 @@ function eHelicopter_dropCrewOff(heli, location)
 
 	local choice
 	for character,value in pairs(EHEIsoPlayers) do
-		if (not choice) or (choice and character and (heli:getDistanceToIsoObject(choice) < heli:getDistanceToIsoObject(character))) then
-			if heli:getDistanceToIsoObject(choice) <= heliScopeSpread then
-				choice = character
-			end
+		if (not choice) or (choice and character and (heli:getDistanceToIsoObject(choice) < heli:getDistanceToIsoObject(character)) and (heli:getDistanceToIsoObject(choice) <= heliScopeSpread) ) then
+			choice = character
 		end
 	end
 
