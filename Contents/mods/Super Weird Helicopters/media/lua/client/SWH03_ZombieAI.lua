@@ -81,7 +81,7 @@ function eHelicopter_zombieAI.onUpdate_fodder(zombie, apply)
 	end
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: fodder")
-		zombie:setHealth(0.01)
+		zombie:setHealth(0.001)
 	else
 		--nothing on update
 	end
