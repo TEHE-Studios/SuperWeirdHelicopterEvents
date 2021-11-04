@@ -1,6 +1,12 @@
 ---@param player IsoGameCharacter | IsoMovingObject
 function EHE_Recipe.BURGERBOX(recipe, result, player)
-	player:getInventory():AddItems("Base.MeatPatty", 50)
+	local meats = player:getInventory():AddItems("Base.MeatPatty", 50)
+	for i=0, meats:size()-1 do
+		local meat = meats:get(i)
+		if meat then
+			meats:setAutoAge()
+		end
+	end
 end
 
 
