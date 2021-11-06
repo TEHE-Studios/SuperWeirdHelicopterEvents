@@ -4,6 +4,10 @@ function eHelicopter_dropCrewOff(heli, location)
 	local crew = heli:spawnCrew(0, 0)
 	heli.addedFunctionsToEvents.OnHover = false
 
+	if not #crew then
+		return
+	end
+
 	---((Scope * 2)+1) * ((Spread * 2)+1) ^2 = attackScopeSpread area
 	local heliScopeSpread = ((math.max(heli.attackScope,heli.attackSpread)*2)+1)^2
 
