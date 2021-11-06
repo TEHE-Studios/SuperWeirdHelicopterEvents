@@ -11,6 +11,7 @@ module SWH
        BurgerBox=1,
        keep [EHE_Recipe.CanOpenBoxes],
        Result:Spiffo=1,
+       RemoveResultItem:true,
        OnCreate:EHE_Recipe.BURGERBOX,
        Time:70.0,
        Sound:OpenBox,
@@ -19,6 +20,7 @@ module SWH
         {
            BurgerBox=1,
            Result:Spiffo=1,
+           RemoveResultItem:true,
            OnCreate:EHE_Recipe.BURGERBOX,
            Tooltip:Tooltip_open_boxes_barehanded,
            Time:210.0,
@@ -31,6 +33,7 @@ module SWH
        MerchBox=1,
        keep [EHE_Recipe.CanOpenBoxes],
        Result:Spiffo=1,
+       RemoveResultItem:true,
        OnCreate:EHE_Recipe.MERCHBOX,
        Time:70.0,
        Sound:OpenBox,
@@ -39,6 +42,7 @@ module SWH
         {
            MerchBox=1,
            Result:Spiffo=1,
+           RemoveResultItem:true,
            OnCreate:EHE_Recipe.MERCHBOX,
            Tooltip:Tooltip_open_boxes_barehanded,
            Time:210.0,
@@ -51,6 +55,7 @@ module SWH
        CostumeBox=1,
        keep [EHE_Recipe.CanOpenBoxes],
        Result:Spiffo=1,
+       RemoveResultItem:true,
        OnCreate:EHE_Recipe.COSTUMEBOX,
        Time:70.0,
        Sound:OpenBox,
@@ -59,6 +64,7 @@ module SWH
         {
            CostumeBox=1,
            Result:Spiffo=1,
+           RemoveResultItem:true,
            OnCreate:EHE_Recipe.COSTUMEBOX,
            Tooltip:Tooltip_open_boxes_barehanded,
            Time:210.0,
@@ -71,6 +77,7 @@ module SWH
        IceCreamBox=1,
        keep [EHE_Recipe.CanOpenBoxes],
        Result:MeltedIceCream=1,
+       RemoveResultItem:true,
        OnCreate:EHE_Recipe.ICECREAMBOX,
        Time:70.0,
        Sound:OpenBox,
@@ -79,6 +86,7 @@ module SWH
         {
            IceCreamBox=1,
            Result:MeltedIceCream=1,
+           RemoveResultItem:true,
            OnCreate:EHE_Recipe.ICECREAMBOX,
            Tooltip:Tooltip_open_boxes_barehanded,
            Time:210.0,
