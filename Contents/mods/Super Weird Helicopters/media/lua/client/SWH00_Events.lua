@@ -8,12 +8,21 @@ function eHelicopter_dropCrewOff(heli, location)
 		return
 	end
 
-	---((Scope * 2)+1) * ((Spread * 2)+1) ^2 = attackScopeSpread area
-	local heliScopeSpread = ((math.max(heli.attackScope,heli.attackSpread)*2)+1)^2
+	eHelicopter_crewSeek(crew, location)
+end
+
+
+---@param crew table
+---@param location IsoGridSquare
+function eHelicopter_crewSeek(crew, location)
+
+	if not #crew then
+		return
+	end
 
 	local choice
 	for character,value in pairs(EHEIsoPlayers) do
-		if (not choice) or (choice and character and (heli:getDistanceToIsoObject(choice) < heli:getDistanceToIsoObject(character)) and (heli:getDistanceToIsoObject(choice) <= heliScopeSpread) ) then
+		if (not choice) or (choice and character and (location:DistTo(choice) < location:DistTo(character)) ) then
 			choice = character
 		end
 	end

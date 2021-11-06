@@ -56,7 +56,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {}
 
 eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 }
 
 
@@ -67,7 +67,7 @@ eHelicopter_PRESETS["UFO"] = {
 	hoverOnTargetDuration = {2000,2250},
 	speed = 1.3,
 	topSpeedFactor = 2,
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapAndParts = false,
 	addedCrashChance = 33,
 	flightHours = {19,24},
@@ -132,7 +132,7 @@ eHelicopter_PRESETS["IRS"] = {
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
 		["flightSound"] = "eHelicopter",
 	},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	announcerVoice = "IRS",
 }
 
@@ -169,7 +169,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 			"RobertJohnson",25,0,
 			"RobertJohnson",25,0, },
 	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy",},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapAndParts = false,
 }
 
