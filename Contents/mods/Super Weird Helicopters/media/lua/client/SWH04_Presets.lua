@@ -122,7 +122,7 @@ eHelicopter_PRESETS["IRS"] = {
 	attackSpread = 4,
 	speed = 0.09,
 	attackHitChance = 65,
-	attackDamage = 35,
+	attackDamage = 12,
 	hostilePreference = "IsoPlayer",
 	dropItems = {["SWH.TenFortyForm"]=400},
 	eventSoundEffects = {
