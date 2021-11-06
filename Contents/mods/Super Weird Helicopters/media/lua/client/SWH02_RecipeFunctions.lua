@@ -4,7 +4,7 @@ function EHE_Recipe.BURGERBOX(recipe, result, player)
 	for i=0, meats:size()-1 do
 		local meat = meats:get(i)
 		if meat then
-			meats:setAutoAge()
+			meat:setAutoAge()
 		end
 	end
 end
