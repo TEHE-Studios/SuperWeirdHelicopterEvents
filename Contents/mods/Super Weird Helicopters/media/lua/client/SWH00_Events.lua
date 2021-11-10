@@ -1,14 +1,8 @@
 ---@param heli eHelicopter
 ---@param location IsoGridSquare
 function eHelicopter_dropCrewOff(heli, location)
-	local crew = heli:spawnCrew(0, 0)
+	heli:spawnCrew()
 	heli.addedFunctionsToEvents.OnHover = false
-
-	if not #crew then
-		return
-	end
-
-	eHelicopter_crewSeek(crew, location)
 end
 
 
@@ -16,7 +10,7 @@ end
 ---@param location IsoGridSquare
 function eHelicopter_crewSeek(crew, location)
 
-	if not #crew then
+	if not crew then
 		return
 	end
 
