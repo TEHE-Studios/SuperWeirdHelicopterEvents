@@ -22,8 +22,13 @@ function eHelicopter_crewSeek(crew, location)
 	end
 
 	if choice then
-		for key,zombie in pairs(crew) do
-			zombie:spotted(choice, true)
+
+		for i=0, crew:size()-1 do
+			---@type IsoZombie
+			local zombie = crew:get(i)
+			if zombie then
+				zombie:spotted(choice, true)
+			end
 		end
 	end
 end
