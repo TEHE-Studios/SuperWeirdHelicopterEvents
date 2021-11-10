@@ -77,6 +77,7 @@ eHelicopter_PRESETS["UFO"] = {
 }
 
 eHelicopter_PRESETS["UFOTourists"] = {
+	inherit = {"UFO"},
 	crew = {"AlienTourist",100,0,
 			"AlienTourist",75,0,
 			"AlienTourist",30,0,
@@ -85,6 +86,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 }
 
 eHelicopter_PRESETS["UFORednecks"] = {
+	inherit = {"UFO"},
 	crashType = {"UFORedneck"},
 	crew = {"AlienRedneck",100,0,
 			"AlienRedneck",75,0,
@@ -94,6 +96,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 }
 
 eHelicopter_PRESETS["UFOFratBoys"] = {
+	inherit = {"UFO"},
 	crew = {"AlienBeefo",100,0,
 			"AlienBeefo",75,0,
 			"AlienBeefo",30,0,
@@ -137,11 +140,13 @@ eHelicopter_PRESETS["IRS"] = {
 }
 
 eHelicopter_PRESETS["IRS_Wave1"] = {
+	inherit = {"IRS"},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
 }
 
 eHelicopter_PRESETS["IRS_Wave2"] = {
+	inherit = {"IRS"},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
@@ -149,6 +154,7 @@ eHelicopter_PRESETS["IRS_Wave2"] = {
 }
 
 eHelicopter_PRESETS["IRS_Wave3"] = {
+	inherit = {"IRS"},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
