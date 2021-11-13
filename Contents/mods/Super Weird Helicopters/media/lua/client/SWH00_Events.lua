@@ -1,7 +1,11 @@
 ---@param heli eHelicopter
 ---@param location IsoGridSquare
 function eHelicopter_dropCrewOff(heli, location)
-	heli:spawnCrew()
+
+	local x, y, z = heli:getXYZAsInt()
+	x=x+ZombRand(42,69)
+	y=y+ZombRand(42,69)
+	heli:spawnCrew(x, y, z)
 	heli.addedFunctionsToEvents.OnHover = false
 end
 
