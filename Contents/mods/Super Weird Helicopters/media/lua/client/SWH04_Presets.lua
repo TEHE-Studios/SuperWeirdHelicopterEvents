@@ -78,6 +78,7 @@ eHelicopter_PRESETS["UFO"] = {
 
 eHelicopter_PRESETS["UFOTourists"] = {
 	inherit = {"UFO"},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"AlienTourist",100,0,
 			"AlienTourist",75,0,
 			"AlienTourist",30,0,
@@ -87,6 +88,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 
 eHelicopter_PRESETS["UFORednecks"] = {
 	inherit = {"UFO"},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crashType = {"UFORedneck"},
 	crew = {"AlienRedneck",100,0,
 			"AlienRedneck",75,0,
@@ -97,6 +99,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 
 eHelicopter_PRESETS["UFOFratBoys"] = {
 	inherit = {"UFO"},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"AlienBeefo",100,0,
 			"AlienBeefo",75,0,
 			"AlienBeefo",30,0,
@@ -141,12 +144,14 @@ eHelicopter_PRESETS["IRS"] = {
 
 eHelicopter_PRESETS["IRS_Wave1"] = {
 	inherit = {"IRS"},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
 }
 
 eHelicopter_PRESETS["IRS_Wave2"] = {
 	inherit = {"IRS"},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
@@ -155,6 +160,7 @@ eHelicopter_PRESETS["IRS_Wave2"] = {
 
 eHelicopter_PRESETS["IRS_Wave3"] = {
 	inherit = {"IRS"},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
