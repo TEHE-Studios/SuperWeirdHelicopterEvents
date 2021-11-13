@@ -1,6 +1,8 @@
 ---@param heli eHelicopter
----@param location IsoGridSquare
-function eHelicopter_dropCrewOff(heli, location)
+function eHelicopter_dropCrewOff(heli)
+	if not heli then
+		return
+	end
 
 	local x, y, z = heli:getXYZAsInt()
 	x=x+ZombRand(42,69)
@@ -14,7 +16,7 @@ end
 ---@param location IsoGridSquare
 function eHelicopter_crewSeek(crew, location)
 
-	if not crew then
+	if not crew or not location then
 		return
 	end
 
