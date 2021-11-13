@@ -15,7 +15,7 @@ function eHelicopter_dropCrewOff(heli)
 		y=0-y
 	end
 	
-	EHE_EventMarkerHandler.setOrUpdateMarkers(nil, "media/ui/crew.png", 3000, x, y)
+	EHE_EventMarkerHandler.setOrUpdateMarkers(nil, "media/ui/crew.png", 750, x, y)
 	heli:spawnCrew(x, y, 0)
 	heli.addedFunctionsToEvents.OnHover = false
 end
