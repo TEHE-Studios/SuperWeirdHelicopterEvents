@@ -8,7 +8,7 @@ function eHelicopter_dropCrewOff(heli)
 	x=x+ZombRand(20,35)
 	y=y+ZombRand(20,35)
 	EHE_EventMarkerHandler.setOrUpdateMarkers(nil, "media/ui/crew.png", 3000, x, y)
-	heli:spawnCrew(x, y, z)
+	heli:spawnCrew(x, y, 0)
 	heli.addedFunctionsToEvents.OnHover = false
 end
 
@@ -30,7 +30,7 @@ function eHelicopter_crewSeek(crew)
 		return
 	end
 
-	for character,value in pairs(EHEIsoPlayers) do
+	for character,_ in pairs(EHEIsoPlayers) do
 		if (not choice) or (choice and character and (location:DistTo(choice) < location:DistTo(character)) ) then
 			choice = character
 		end
