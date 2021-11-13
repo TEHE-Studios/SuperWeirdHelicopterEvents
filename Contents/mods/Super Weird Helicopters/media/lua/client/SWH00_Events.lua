@@ -14,14 +14,22 @@ end
 
 
 ---@param crew table
----@param location IsoGridSquare
-function eHelicopter_crewSeek(crew, location)
+function eHelicopter_crewSeek(crew)
 
-	if not crew or not location then
+	if not crew then
 		return
 	end
 
 	local choice
+	local location
+
+	if crew:size() > 0 then
+		location = crew:get(0):getSquare()
+	end
+	if not location then
+		return
+	end
+
 	for character,value in pairs(EHEIsoPlayers) do
 		if (not choice) or (choice and character and (location:DistTo(choice) < location:DistTo(character)) ) then
 			choice = character
