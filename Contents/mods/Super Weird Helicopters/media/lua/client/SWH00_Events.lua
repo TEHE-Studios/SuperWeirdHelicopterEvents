@@ -7,6 +7,14 @@ function eHelicopter_dropCrewOff(heli)
 	local x, y, z = heli:getXYZAsInt()
 	x=x+ZombRand(20,35)
 	y=y+ZombRand(20,35)
+
+	if ZombRand(101) <= 50 then
+		x=0-x
+	end
+	if ZombRand(101) <= 50 then
+		y=0-y
+	end
+	
 	EHE_EventMarkerHandler.setOrUpdateMarkers(nil, "media/ui/crew.png", 3000, x, y)
 	heli:spawnCrew(x, y, 0)
 	heli.addedFunctionsToEvents.OnHover = false
