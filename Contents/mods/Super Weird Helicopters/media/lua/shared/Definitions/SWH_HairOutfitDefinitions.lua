@@ -3,11 +3,14 @@ HairOutfitDefinitions = HairOutfitDefinitions or {};
 
 HairOutfitDefinitions.haircutOutfitDefinition = {};
 
-local alien = { outfit = "AlienTourist", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
-table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alien)
+local alienTourist = { outfit = "AlienTourist", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
+table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienTourist)
 
 local alienRedneck = { outfit = "AlienRedneck", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
+
+local alienBeefo = { outfit = "AlienBeefo", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
+table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienBeefo)
 
 local taxman = { outfit = "TaxMan", haircut = "Buzzcut:50;Short:50", beard = "None:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, taxman)
