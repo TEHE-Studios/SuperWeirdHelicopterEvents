@@ -35,33 +35,33 @@ VehicleDistributions.Bell206SpiffoSeat = {
 VehicleDistributions.UFOSeat = {
     rolls = 6,
     items ={
-        "EHE.AlienBlaster", 4,
-        "EHE.AlienBlaster", 3,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.StrangeNewspaper", 5,
-        "EHE.StrangeNewspaper", 5,
-        "EHE.StrangeNewspaper", 5,
+        "SWH.AlienBlaster", 4,
+        "SWH.AlienBlaster", 3,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.StrangeNewspaper", 5,
+        "SWH.StrangeNewspaper", 5,
+        "SWH.StrangeNewspaper", 5,
     }
 }
 
 VehicleDistributions.UFOTrunk = {
     rolls = 6,
     items ={
-        "EHE.AlienBlaster", 7,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.StrangeNewspaper", 5,
-        "EHE.StrangeNewspaper", 5,
-        "EHE.StrangeNewspaper", 5,
+        "SWH.AlienBlaster", 7,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.StrangeNewspaper", 5,
+        "SWH.StrangeNewspaper", 5,
+        "SWH.StrangeNewspaper", 5,
     }
 }
 
