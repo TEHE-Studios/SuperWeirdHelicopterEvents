@@ -1,6 +1,6 @@
 module SWH
 {
-  item AlienBlaster
+    item AlienBlaster
     {
         ImpactSound	=	null,
         MaxRange	=	6,

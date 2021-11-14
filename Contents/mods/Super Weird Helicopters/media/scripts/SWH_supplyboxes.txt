@@ -9,7 +9,7 @@ module SWH
 		WorldStaticModel = SpiffoBox_WorldItem,
 	}
 
-		item MerchBox
+	item MerchBox
 	{
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
@@ -17,7 +17,7 @@ module SWH
 		WorldStaticModel = SpiffoBox_WorldItem,
 	}
 
-		item CostumeBox
+	item CostumeBox
 	{
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
@@ -25,7 +25,7 @@ module SWH
 		WorldStaticModel = SpiffoBox_WorldItem,
 	}
 
-		item IceCreamBox
+	item IceCreamBox
 	{
 		Weight			=	6.3,
 		Icon			=	SupplyBox_blank,
