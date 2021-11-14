@@ -46,6 +46,8 @@ function eHelicopter_crewSeek(crew)
 
 	if choice then
 
+		print("SWH: DEBUG: Crew Seeks")
+
 		for i=0, crew:size()-1 do
 			---@type IsoZombie
 			local zombie = crew:get(i)
