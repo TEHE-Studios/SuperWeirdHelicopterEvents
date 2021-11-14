@@ -8,6 +8,13 @@ function eHelicopter_dropCrewOff(heli)
 	x=x+ZombRand(20,35)
 	y=y+ZombRand(20,35)
 
+	local trueTarget = heli.trueTarget
+	if trueTarget then
+		local tX, tY = trueTarget:getX(), trueTarget:getY()
+		x=math.max(0,x-tX)
+		y=math.max(0,y-tY)
+	end
+	
 	if ZombRand(101) <= 50 then
 		x=0-x
 	end
