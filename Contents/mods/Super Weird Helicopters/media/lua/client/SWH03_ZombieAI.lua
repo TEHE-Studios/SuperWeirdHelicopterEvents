@@ -298,7 +298,7 @@ function eHelicopter_zombieAI.reviveEventsLoop()
 end
 Events.OnTick.Add(eHelicopter_zombieAI.reviveEventsLoop)
 
-eHelicopter_zombieAI.nemesis_burnTime = 3000
+eHelicopter_zombieAI.nemesis_burnTime = 500
 ---@param zombie IsoObject | IsoGameCharacter | IsoZombie
 ---@param player IsoObject | IsoGameCharacter | IsoPlayer
 function eHelicopter_zombieAI.onDead_nemesis(zombie, player, bodyPart, weapon)
