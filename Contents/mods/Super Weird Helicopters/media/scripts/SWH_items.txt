@@ -2,12 +2,6 @@
 module SWH
 {
 
-	imports
-	{
-		Base
-	}
-
-
     item TenFortyForm
 	{
 		Weight = 0.1,
