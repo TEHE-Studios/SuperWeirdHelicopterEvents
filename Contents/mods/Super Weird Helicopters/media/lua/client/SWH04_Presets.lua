@@ -40,6 +40,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 		["Spiffocopter_inviteOnly"] = 0,
 		["Spiffocopter_partyTime"] = 0.05,
 	},
+	eventSpawnWeight = 2,
 	crashType = {"Bell206SpiffoFuselage"},
 	hoverOnTargetDuration = {2000,2250},
 	scrapItems = {"EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
@@ -51,6 +52,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 	crew = {"SpiffoBoss",100,0,
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
+	eventChain = "Main",
 }
 
 eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {}
@@ -62,6 +64,7 @@ eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 
 
 eHelicopter_PRESETS["UFO"] = {
+	eventSpawnWeight = 3,
 	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1,"UFOFratBoys",1,},
 	crashType = {"UFO"},
 	hoverOnTargetDuration = {2000,2250},
@@ -74,6 +77,7 @@ eHelicopter_PRESETS["UFO"] = {
 	announcerVoice = "Aliens",
 	eventMarkerIcon = "media/ui/markerUFO.png",
 	eventSoundEffects = {["flightSound"] = "AlienUFOFlight"},
+	eventChain = "Main",
 }
 
 eHelicopter_PRESETS["UFOTourists"] = {
@@ -115,6 +119,7 @@ eHelicopter_PRESETS["UFOFratBoys"] = {
 
 
 eHelicopter_PRESETS["IRS"] = {
+	eventSpawnWeight = 4,
 	presetProgression = {
 		["IRS_Wave1"] = 0,
 		["IRS_Wave2"] = 0.2,
@@ -140,6 +145,7 @@ eHelicopter_PRESETS["IRS"] = {
 	},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	announcerVoice = "IRS",
+	eventChain = "Main",
 }
 
 eHelicopter_PRESETS["IRS_Wave1"] = {
@@ -172,6 +178,7 @@ eHelicopter_PRESETS["IRS_Wave3"] = {
 
 
 eHelicopter_PRESETS["TISCreamery"] = {
+	eventSpawnWeight = 3,
 	crashType = {"TISIceCreamTruck"},
 	hoverOnTargetDuration = {2000,2250},
 	crew = {"RobertJohnson",100,0,
@@ -183,6 +190,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy",},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapAndParts = false,
+	eventChain = "Main",
 }
 
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
