@@ -1,3 +1,5 @@
+Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.1"))
+
 Events.OnKeyPressed.Add(function(key)
 	if getPlayer() and getDebug() and (eHelicopterSandbox.config.debugTests==true) then
 		if key == Keyboard.KEY_1 then --DEBUG_TESTS.eHeliEventsOnSchedule()--DEBUG_TESTS.testAllLines()

@@ -3,3 +3,4 @@ id=WeirdExpandedHelicopterEvents
 description= Yes.
 poster=poster.png
 require=ExpandedHelicopterEvents
+versionMin=41.51
