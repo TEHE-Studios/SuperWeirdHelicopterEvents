@@ -1,32 +1,6 @@
----Event Scheduler List
---[[
-eHeliEvents_init["preset"] = {["ID"]=nil, ["heliDay"]=configStartDay, ["heliStart"]=nil}
---]]
-function eHeliEventsinit()
-	eHeliEvents_init = eHeliEvents_init or {}
-
-	local startDay = 0
-	local cutOffDay = 30
-	if oldGameVersion then
-		startDay = eHelicopterSandbox.config.startDay
-		cutOffDay = eHelicopterSandbox.config.cutOffDay
-	else
-		startDay = SandboxVars.ExpandedHeli.StartDay
-		cutOffDay = SandboxVars.ExpandedHeli.CutOffDay
-	end
-
-	eHeliEvents_init["Spiffocopter"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,6), ["heliStart"]=nil}
-	eHeliEvents_init["UFO"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,6), ["heliStart"]=nil}
-	eHeliEvents_init["IRS"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,6), ["heliStart"]=nil}
-	eHeliEvents_init["TISCreamery"] = {["ID"]=nil, ["heliDay"]=startDay+ZombRand(0,6), ["heliStart"]=nil}
-end
-Events.OnGameBoot.Add(eHeliEventsinit)
-
-
 ---Preset list, only include variables being changed.
 ---variables can be found in Main Variables file, at the top, fields = variables
 eHelicopter_PRESETS = eHelicopter_PRESETS or {}
-
 --[[
 eHelicopter_PRESETS["id_name"] = {
 		variable = {values}
@@ -34,13 +8,11 @@ eHelicopter_PRESETS["id_name"] = {
 ]]
 
 
-
 eHelicopter_PRESETS["Spiffocopter"] = {
 	presetProgression = {
 		["Spiffocopter_inviteOnly"] = 0,
 		["Spiffocopter_partyTime"] = 0.05,
 	},
-	eventSpawnWeight = 2,
 	crashType = {"Bell206SpiffoFuselage"},
 	hoverOnTargetDuration = {2000,2250},
 	scrapItems = {"EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
@@ -52,7 +24,10 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 	crew = {"SpiffoBoss",100,0,
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
-	eventChain = "Main",
+	forScheduling = true,
+	eventSpawnWeight = 2,
+	eventStartDayFactor = 0.044,
+	eventCutOffDayFactor = 1,
 }
 
 eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {}
@@ -64,7 +39,6 @@ eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
 
 
 eHelicopter_PRESETS["UFO"] = {
-	eventSpawnWeight = 3,
 	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1,"UFOFratBoys",1,},
 	crashType = {"UFO"},
 	hoverOnTargetDuration = {2000,2250},
@@ -77,7 +51,10 @@ eHelicopter_PRESETS["UFO"] = {
 	announcerVoice = "Aliens",
 	eventMarkerIcon = "media/ui/markerUFO.png",
 	eventSoundEffects = {["flightSound"] = "AlienUFOFlight"},
-	eventChain = "Main",
+	forScheduling = true,
+	eventSpawnWeight = 2,
+	eventStartDayFactor = 0.044,
+	eventCutOffDayFactor = 1,
 }
 
 eHelicopter_PRESETS["UFOTourists"] = {
@@ -119,7 +96,6 @@ eHelicopter_PRESETS["UFOFratBoys"] = {
 
 
 eHelicopter_PRESETS["IRS"] = {
-	eventSpawnWeight = 4,
 	presetProgression = {
 		["IRS_Wave1"] = 0,
 		["IRS_Wave2"] = 0.2,
@@ -145,7 +121,10 @@ eHelicopter_PRESETS["IRS"] = {
 	},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	announcerVoice = "IRS",
-	eventChain = "Main",
+	forScheduling = true,
+	eventSpawnWeight = 2,
+	eventStartDayFactor = 0.044,
+	eventCutOffDayFactor = 1,
 }
 
 eHelicopter_PRESETS["IRS_Wave1"] = {
@@ -178,7 +157,6 @@ eHelicopter_PRESETS["IRS_Wave3"] = {
 
 
 eHelicopter_PRESETS["TISCreamery"] = {
-	eventSpawnWeight = 3,
 	crashType = {"TISIceCreamTruck"},
 	hoverOnTargetDuration = {2000,2250},
 	crew = {"RobertJohnson",100,0,
@@ -190,7 +168,10 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy",},
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapAndParts = false,
-	eventChain = "Main",
+	forScheduling = true,
+	eventSpawnWeight = 2,
+	eventStartDayFactor = 0.044,
+	eventCutOffDayFactor = 1,
 }
 
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
