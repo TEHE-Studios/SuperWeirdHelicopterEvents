@@ -25,7 +25,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
 	forScheduling = true,
-	eventSpawnWeight = 2,
+	eventSpawnWeight = 1,
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
@@ -122,7 +122,7 @@ eHelicopter_PRESETS["IRS"] = {
 	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	announcerVoice = "IRS",
 	forScheduling = true,
-	eventSpawnWeight = 2,
+	eventSpawnWeight = 4,
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
