@@ -9,8 +9,8 @@ Events.OnKeyPressed.Add(function(key)
 		elseif key == Keyboard.KEY_5 then DEBUG_TESTS.launchHeliTest("Spiffocopter")
 		elseif key == Keyboard.KEY_6 then DEBUG_TESTS.launchHeliTest("TISCreamery")
 		elseif key == Keyboard.KEY_7 then DEBUG_TESTS.launchHeliTest("IRS")
-		elseif key == Keyboard.KEY_8 then DEBUG_TESTS.launchHeliTest("UFOTourists")
-		elseif key == Keyboard.KEY_9 then DEBUG_TESTS.launchHeliTest("UFOFratBoys")
+		elseif key == Keyboard.KEY_8 then DEBUG_TESTS.launchHeliTest("UFO")
+		elseif key == Keyboard.KEY_9 then DEBUG_TESTS.launchHeliTest("blank")
 		elseif key == Keyboard.KEY_0 then --DEBUG_TESTS.launchHeliTest()
 		end
 	end
