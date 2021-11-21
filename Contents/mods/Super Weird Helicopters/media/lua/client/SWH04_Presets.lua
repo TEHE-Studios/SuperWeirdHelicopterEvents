@@ -7,20 +7,6 @@ eHelicopter_PRESETS["id_name"] = {
 	}
 ]]
 
-eHelicopter_PRESETS["blank"] = {
-	eventSpawnWeight = 1,
-	forScheduling = true,
-	eventCutOffDayFactor = 0.65,
-	eventStartDayFactor = 0.35,
-	doNotListForTwitchIntegration = true,
-	crashType = false,
-	shadow = false,
-	eventSoundEffects = {},
-	eventMarkerIcon = false,
-	forScheduling = true,
-	eventSoundEffects = {},
-	flightVolume = 0,
-}
 
 eHelicopter_PRESETS["Spiffocopter"] = {
 	presetProgression = {
