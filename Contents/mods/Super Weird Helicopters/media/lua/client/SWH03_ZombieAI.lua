@@ -14,6 +14,11 @@ AttachedWeaponDefinitions.gottaGoFast = {
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.AlienRedneck = { chance = 100, maxitem = 1, weapons = {AttachedWeaponDefinitions.gottaGoFast} }
 
 AttachedWeaponDefinitions.gottaGoFast = {
+	chance = 100, weaponLocation = {"Special Zombie AI"}, outfit = {"AlienSanta"},
+	bloodLocations = nil, addHoles = false, daySurvived = 0, weapons = { "ZombieAI.gottaGoFast" } }
+AttachedWeaponDefinitions.attachedWeaponCustomOutfit.AlienSanta = { chance = 100, maxitem = 1, weapons = {AttachedWeaponDefinitions.gottaGoFast} }
+
+AttachedWeaponDefinitions.gottaGoFast = {
 	chance = 100, weaponLocation = {"Special Zombie AI"}, outfit = {"AlienBeefo"},
 	bloodLocations = nil, addHoles = false, daySurvived = 0, weapons = { "ZombieAI.gottaGoFast" } }
 AttachedWeaponDefinitions.attachedWeaponCustomOutfit.AlienBeefo = { chance = 100, maxitem = 1, weapons = {AttachedWeaponDefinitions.gottaGoFast} }

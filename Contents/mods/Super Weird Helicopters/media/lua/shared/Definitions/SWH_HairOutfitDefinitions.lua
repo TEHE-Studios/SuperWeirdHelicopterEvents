@@ -9,6 +9,9 @@ table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienTourist)
 local alienRedneck = { outfit = "AlienRedneck", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
 
+local alienRedneck = { outfit = "AlienSanta", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
+table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
+
 local alienBeefo = { outfit = "AlienBeefo", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienBeefo)
 

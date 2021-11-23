@@ -91,6 +91,34 @@
 		    </m_items>
 	</m_MaleOutfits>
 
+	<m_MaleOutfits>
+		<m_Name>SantaAlien</m_Name>
+		<m_Guid>d76b7c91-a19e-40ca-bc9b-d16e451b67e1</m_Guid>
+		<m_Top>false</m_Top>
+		<m_Pants>false</m_Pants>
+		<m_AllowPantsHue>false</m_AllowPantsHue>
+		<m_AllowTopTint>false</m_AllowTopTint>
+		<m_AllowTShirtDecal>false</m_AllowTShirtDecal>
+		<m_items> <!-- Alien Skin-->
+			<itemGUID>d5768fec-f732-4e4b-ad50-193e55d6400f</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>bf681ec8-a092-4aa0-8f52-10665a25f1c3</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>1cb0dd48-3578-435e-8677-2b9fa6d8e3f3</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>0718a5ec-3a83-4868-b42b-5ac979a328e7</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>2717dfdb-49ef-401a-9715-c4487ce6abea</itemGUID>
+		</m_items>
+		<m_items>
+			<itemGUID>9c36a162-1348-46ad-81bd-70bf3ed7a93e</itemGUID>
+		</m_items>
+	</m_MaleOutfits>
+
 <m_MaleOutfits>
 		<m_Name>SpiffoBoss</m_Name>
 		<m_Guid>813ebabc-cabd-4675-9b3a-09957cb750a4</m_Guid>
