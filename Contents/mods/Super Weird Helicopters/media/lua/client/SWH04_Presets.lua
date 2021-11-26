@@ -201,5 +201,5 @@ eHelicopter_PRESETS["sandyclaws"] = {
 	forScheduling = true,
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 6,
-	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {1,1}}}
+	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,25}}}
 }
