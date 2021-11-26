@@ -3,16 +3,16 @@ HairOutfitDefinitions = HairOutfitDefinitions or {};
 
 HairOutfitDefinitions.haircutOutfitDefinition = {};
 
-local alienTourist = { outfit = "AlienTourist", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
+local alienTourist = { outfit = "AlienTourist", haircut = "Bald:100", beard = "None:100", haircutColor = "0,0,0:0" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienTourist)
 
-local alienRedneck = { outfit = "AlienRedneck", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
+local alienRedneck = { outfit = "AlienRedneck", haircut = "Bald:100", beard = "None:100", haircutColor = "0,0,0:0" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
 
-local alienRedneck = { outfit = "AlienSanta", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
-table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
+local alienSanta = { outfit = "AlienSanta", haircut = "Bald:100", beard = "Long:100", haircutColor = "0.97,0.94,0.89:0" }
+table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienSanta)
 
-local alienBeefo = { outfit = "AlienBeefo", haircut = "Bald:100", beard = "None:100", haircutColor = "0.99,0.99,0.99:100" }
+local alienBeefo = { outfit = "AlienBeefo", haircut = "Bald:100", beard = "None:100", haircutColor = "0,0,0:0" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienBeefo)
 
 local taxman = { outfit = "TaxMan", haircut = "Buzzcut:50;Short:50", beard = "None:100" }
