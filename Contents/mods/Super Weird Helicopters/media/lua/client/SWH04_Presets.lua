@@ -196,7 +196,7 @@ eHelicopter_PRESETS["sandyclaws"] = {
 		["flightSound"] = "eMiliHeli",
 		["attackSingle"] = "eHeliM16GunfireSingle",
 		["attackLooped"] = "eHeliM16GunfireSingle",
-		--["additionalFlightSound"] = "needs some christmas music but busted",
+		["additionalFlightSound"] = "JangleBalls",
 	},
 	forScheduling = true,
 	eventCutOffDayFactor = 1,
