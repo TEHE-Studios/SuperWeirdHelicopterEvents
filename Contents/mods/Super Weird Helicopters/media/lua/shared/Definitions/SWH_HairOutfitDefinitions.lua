@@ -9,7 +9,7 @@ table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienTourist)
 local alienRedneck = { outfit = "AlienRedneck", haircut = "Bald:100", beard = "None:100", haircutColor = "0,0,0:0" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienRedneck)
 
-local alienSanta = { outfit = "AlienSanta", haircut = "Bald:100", beard = "Long:100", haircutColor = "0.97,0.94,0.89:0" }
+local alienSanta = { outfit = "AlienSanta", haircut = "Bald:100", beard = "Long:100", haircutColor = "0.97,0.94,0.89:100" }
 table.insert(HairOutfitDefinitions.haircutOutfitDefinition, alienSanta)
 
 local alienBeefo = { outfit = "AlienBeefo", haircut = "Bald:100", beard = "None:100", haircutColor = "0,0,0:0" }
