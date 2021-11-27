@@ -182,9 +182,9 @@ eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
 eHelicopter_PRESETS["sandyclaws"] = {
 	speed = 0.20,
-	crashType = {"UH1HRaiderFuselage"},
-	--scrapItems = {"EHE.UH1HHalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10,},
-	scrapVehicles = {"UH1HSanta"},
+	crashType = {"UH1HSantaFuselage"},
+	scrapItems = {"EHE.UH1HHalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10,},
+	scrapVehicles = {"UH1HSantaTail"},
 	crew = {"AlienSanta"},
 	hoverOnTargetDuration = {2500,3000},
 	attackDelay = 1700,
