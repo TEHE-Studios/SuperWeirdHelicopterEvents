@@ -198,6 +198,7 @@ eHelicopter_PRESETS["sandyclaws"] = {
 		["attackLooped"] = "eHeliM16GunfireSingle",
 		["additionalFlightSound"] = "JangleBalls",
 	},
+	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 6,
