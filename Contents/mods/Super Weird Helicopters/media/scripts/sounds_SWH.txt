@@ -25,8 +25,8 @@ module Base {
 
 
     sound JangleBalls {
-        category = Vehicle, loop = true,
-       clip { file = media/sound/jangleballs.ogg, distanceMin = 10, distanceMax = 20, reverbMaxRange = 10, reverbFactor = 0, } }
+       category = Vehicle, loop = true, is3D = true,
+       clip { file = media/sound/jangleballs.ogg, distanceMax = 750, } }
 
 
 	sound PAWS1 {
