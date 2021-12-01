@@ -172,10 +172,17 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	eventCutOffDayFactor = 1,
 }
 
-
-
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
+
+eHelicopter_PRESETS.helikopter = {
+	inherit = {"raider_heli_aggressive"},
+	eventSoundEffects = {
+		["flightSound"] = "eMiliHeli",
+		["attackSingle"] = "eHeliM16GunfireSingle",
+		["attackLooped"] = "eHeliM16GunfireSingle",
+		["additionalFlightSound"] = "Helikopter",}
+}
 
 
 eHelicopter_PRESETS["sandyclaws"] = {

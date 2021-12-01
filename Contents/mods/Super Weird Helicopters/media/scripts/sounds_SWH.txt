@@ -28,6 +28,9 @@ module Base {
        category = Vehicle, loop = true, is3D = true,
        clip { file = media/sound/jangleballs.ogg, distanceMax = 750, } }
 
+    sound Helikopter {
+       category = Vehicle, loop = true, is3D = true,
+       clip { file = media/sound/Helikopter.ogg, distanceMax = 750, } }
 
 	sound PAWS1 {
 		category = Vehicle, loop = true,
