@@ -175,7 +175,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
 
-eHelicopter_PRESETS.helikopter = {
+eHelicopter_PRESETS["helikopter (copyrighted)"] = {
 	inherit = {"raider_heli_aggressive"},
 	eventSoundEffects = {
 		["flightSound"] = "eMiliHeli",
