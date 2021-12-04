@@ -21,7 +21,7 @@ module Base {
 
     sound AlienUFOFlight {
         category = EHE: Main, loop = true, is3D = true,
-        clip { file = media/sound/alien_ufo_flight.ogg, distanceMax = 500, volume = 1.6, } }
+        clip { file = media/sound/alien_ufo_flight.ogg, distanceMax = 500, volume = 1, } }
 
 
     sound JangleBalls {
@@ -99,9 +99,9 @@ module Base {
 
     sound AlienAck {
         category = EHE-Weird: Voice Lines, loop = false, is3D = true,
-        clip { file = media/sound/AlienAck1.ogg, distanceMax = 300, volume = 0.3, }
-        clip { file = media/sound/AlienAck2.ogg, distanceMax = 300, volume = 0.3, }
-        clip { file = media/sound/AlienAck3.ogg, distanceMax = 300, volume = 0.3, } }
+        clip { file = media/sound/AlienAck1.ogg, distanceMax = 300, volume = 0.2, }
+        clip { file = media/sound/AlienAck2.ogg, distanceMax = 300, volume = 0.2, }
+        clip { file = media/sound/AlienAck3.ogg, distanceMax = 300, volume = 0.2, } }
 
 
     sound SpiffoGiggle {
