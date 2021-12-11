@@ -1,3 +1,5 @@
+require "ExpandedHelicopter03a_Announcers"
+
 eHelicopter_announcers = eHelicopter_announcers or {}
 
 --[[

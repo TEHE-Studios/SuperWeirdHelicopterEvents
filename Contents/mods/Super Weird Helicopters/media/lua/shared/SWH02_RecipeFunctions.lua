@@ -1,3 +1,5 @@
+require "ExpandedHelicopter07_RecipeFunctions"
+
 ---@param player IsoGameCharacter | IsoMovingObject
 function EHE_Recipe.BURGERBOX(recipe, result, player)
 	local meats = player:getInventory():AddItems("Base.MeatPatty", 50)
