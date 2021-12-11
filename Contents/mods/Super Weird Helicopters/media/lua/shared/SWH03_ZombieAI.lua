@@ -1,6 +1,16 @@
+require "luautils"
+local function setZombieSpeed(zombie, speedVal)
+	for i = 0, getNumClassFields(zombie) - 1 do
+		---@type Field
+		local javaField = getClassField(zombie, i)
+		if luautils.stringEnds(tostring(javaField), '.' .. "speedType") then
+			javaField:setInt(zombie,speedVal)
+		end
+	end
+end
+
 local group = AttachedLocations.getGroup("Human")
 group:getOrCreateLocation("Special Zombie AI"):setAttachmentName("special_zombie_AI")
-
 
 
 AttachedWeaponDefinitions.gottaGoFast = {
@@ -101,10 +111,8 @@ function eHelicopter_zombieAI.onUpdate_gottaGoFast(zombie, apply)
 	end
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: gottaGoFast")
-		zombie:changeSpeed(1)
+		setZombieSpeed(zombie,1)
 		zombie:DoZombieStats()
-		zombie:setSpeedMod(10)
-
 	else
 		if zombie:isCrawling() then
 			zombie:toggleCrawling()
@@ -123,9 +131,8 @@ function eHelicopter_zombieAI.onUpdate_licking(zombie, apply)
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: licking")
 		zombie:setNoTeeth(true)
-		zombie:changeSpeed(1)
+		setZombieSpeed(zombie,1)
 		zombie:DoZombieStats()
-		zombie:setSpeedMod(10)
 
 	else
 		if (not zombie:isDead()) and (not zombie:isOnFloor()) and zombie:isAttacking() then
@@ -156,7 +163,7 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
-		zombie:changeSpeed(2)
+		setZombieSpeed(zombie,2)
 		zombie:DoZombieStats()
 		zombie:setHealth(zombie:getHealth()*100)
 		zombie:setReanimatedPlayer(false)
