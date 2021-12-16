@@ -120,6 +120,11 @@ function eHelicopter_zombieAI.onUpdate_gottaGoFast(zombie, apply)
 	end
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: gottaGoFast")
+
+		if zombie.changeSpeed then
+			zombie:changeSpeed(1)
+		end
+		
 		setZombieSpeed(zombie,1)
 		zombie:DoZombieStats()
 	else
@@ -140,6 +145,11 @@ function eHelicopter_zombieAI.onUpdate_licking(zombie, apply)
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: licking")
 		zombie:setNoTeeth(true)
+
+		if zombie.changeSpeed then
+			zombie:changeSpeed(1)
+		end
+
 		setZombieSpeed(zombie,1)
 		zombie:DoZombieStats()
 
@@ -172,6 +182,11 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
+
+		if zombie.changeSpeed then
+			zombie:changeSpeed(2)
+		end
+
 		setZombieSpeed(zombie,2)
 		zombie:DoZombieStats()
 		zombie:setHealth(zombie:getHealth()*100)
