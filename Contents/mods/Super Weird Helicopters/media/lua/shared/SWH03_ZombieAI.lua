@@ -3,8 +3,17 @@ local function setZombieSpeed(zombie, speedVal)
 	for i = 0, getNumClassFields(zombie) - 1 do
 		---@type Field
 		local javaField = getClassField(zombie, i)
-		if luautils.stringEnds(tostring(javaField), '.' .. "speedType") then
-			javaField:setInt(zombie,speedVal)
+		if javaField then
+			print("-EHE:SWH: javaField: "..tostring(javaField))
+			if luautils.stringEnds(tostring(javaField), '.' .. "speedType") then
+
+				if not javaField.setInt then
+					print("-EHE:SWH: setZombieSpeed: ERROR: javaField.setInt not found.")
+					return
+				end
+
+				javaField:setInt(zombie,speedVal)
+			end
 		end
 	end
 end
