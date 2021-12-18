@@ -1,7 +1,7 @@
 require "luautils"
 local function setZombieSpeed(zombie, speedVal)
-	return --TODO: Figure out how to get this to work outside of debug
-	---
+	--TODO: Figure out how to get this to work outside of debug
+	--[[
 	for i = 0, getNumClassFields(zombie) - 1 do
 		---@type Field
 		local javaField = getClassField(zombie, i)
@@ -17,6 +17,7 @@ local function setZombieSpeed(zombie, speedVal)
 			end
 		end
 	end
+	]]
 end
 
 local group = AttachedLocations.getGroup("Human")
