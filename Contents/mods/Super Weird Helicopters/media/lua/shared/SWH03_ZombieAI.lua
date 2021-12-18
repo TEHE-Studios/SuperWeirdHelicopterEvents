@@ -1,18 +1,19 @@
 require "luautils"
 local function setZombieSpeed(zombie, speedVal)
+	return --TODO: Figure out how to get this to work outside of debug
+	---
 	for i = 0, getNumClassFields(zombie) - 1 do
 		---@type Field
 		local javaField = getClassField(zombie, i)
 		if javaField then
-			print("-EHE:SWH: javaField: "..tostring(javaField))
 			if luautils.stringEnds(tostring(javaField), '.' .. "speedType") then
-
+				print("-EHE:SWH: javaField: "..tostring(javaField))
 				if not javaField.setInt then
 					print("-EHE:SWH: setZombieSpeed: ERROR: javaField.setInt not found.")
 					return
+				else
+					javaField:setInt(zombie,speedVal)
 				end
-
-				javaField:setInt(zombie,speedVal)
 			end
 		end
 	end
@@ -124,7 +125,7 @@ function eHelicopter_zombieAI.onUpdate_gottaGoFast(zombie, apply)
 		if zombie.changeSpeed then
 			zombie:changeSpeed(1)
 		end
-		
+
 		setZombieSpeed(zombie,1)
 		zombie:DoZombieStats()
 	else
