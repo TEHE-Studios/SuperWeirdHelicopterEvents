@@ -22,7 +22,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 	eventSoundEffects = {["flightSound"] = "eHelicopter"},
 	dropPackages = {"SpiffoBurger"},
 	announcerVoice = "Spiffo",
-	dropItems = {["SWH.SpiffoInvite"]=250},
+	--dropItems = {["SWH.SpiffoInvite"]=250},
 	crew = {"SpiffoBoss",100,0,
 			"SpiffoBoss",10,0,
 			"SpiffoBoss",1,0,},
@@ -114,7 +114,7 @@ eHelicopter_PRESETS["IRS"] = {
 	attackHitChance = 65,
 	attackDamage = 12,
 	hostilePreference = "IsoPlayer",
-	dropItems = {["SWH.TenFortyForm"]=400},
+	--dropItems = {["SWH.TenFortyForm"]=400},
 	eventSoundEffects = {
 		["attackSingle"] = "eHeli_bolt_action_fire_single",
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
