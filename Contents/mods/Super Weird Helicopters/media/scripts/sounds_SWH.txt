@@ -13,47 +13,47 @@ module Base {
 		clip { file = media/sound/vehicle_cream3.ogg, distanceMin = 10, distanceMax = 20, reverbMaxRange = 10, reverbFactor = 0, } }
 
     sound IceCreamFlyBy {
-        category = EHE: Main, loop = true, is3D = true,
+        category = EHE: Main, loop = false, is3D = true,
         clip { file = media/sound/vehicle_cream1.ogg, distanceMax = 500, volume = 2.0, }
         clip { file = media/sound/vehicle_cream2.ogg, distanceMax = 500, volume = 2.0, }
         clip { file = media/sound/vehicle_cream3.ogg, distanceMax = 500, volume = 2.0, }
         clip { file = media/sound/vehicle_cream4.ogg, distanceMax = 500, volume = 2.0, } }
 
     sound AlienUFOFlight {
-        category = EHE: Main, loop = true, is3D = true,
+        category = EHE: Main, loop = false, is3D = true,
         clip { file = media/sound/alien_ufo_flight.ogg, distanceMax = 500, volume = 0.4, } }
 
 
     sound JangleBalls {
-       category = Vehicle, loop = true, is3D = true,
+       category = Vehicle, loop = false, is3D = true,
        clip { file = media/sound/jangleballs.ogg, distanceMax = 750, } }
 
     sound Helikopter {
-       category = Vehicle, loop = true, is3D = true,
+       category = Vehicle, loop = false, is3D = true,
        clip { file = media/sound/Helikopter.ogg, distanceMax = 750, } }
 
 	sound PAWS1 {
-		category = Vehicle, loop = true,
+		category = Vehicle, loop = false,
 		clip { file = media/sound/PAWS1.ogg, distanceMin = 10, distanceMax = 20, reverbMaxRange = 10, reverbFactor = 0, } }
 
 	sound PAWS2 {
-	    category = Vehicle, loop = true,
+	    category = Vehicle, loop = false,
 		clip { file = media/sound/PAWS2.ogg, distanceMin = 10, distanceMax = 20, reverbMaxRange = 10, reverbFactor = 0, } }
 
 
 	sound airraid {
-	    category = Vehicle, loop = true, clip
+	    category = Vehicle, loop = false, clip
 		{ file = media/sound/airraid.ogg, distanceMin = 10, distanceMax = 20, reverbMaxRange = 10, reverbFactor = 0, } }
+
+
+    sound assBlastUSA {
+        category = EHE-Weird: Voice Lines, loop = false, is3D = true,
+        clip { file = media/sound/assblastusa.ogg, distanceMax = 750, volume = 0.5, } }
 
 
 	sound ZombieLick {
 		category = Zombie, loop = false, is3D = true,
 		clip { file = media/sound/lick.wav, distanceMax = 10, volume = 1.0, } }
-
-
-    sound assBlastUSA {
-        category = EHE-Weird: Voice Lines, loop = true, is3D = true,
-        clip { file = media/sound/assblastusa.ogg, distanceMax = 750, volume = 0.5, } }
 
 
     sound IRS1 {
