@@ -1,21 +1,15 @@
 version=1
 id=2580001162
 title=Expanded Helicopter Events: Super Weird Edition
-description= [h2]THIS MOD REQUIRES [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458631365]EXPANDED HELICOPTER EVENTS[/url][/h2]
+description=[h2]THIS MOD REQUIRES [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2458631365]EXPANDED HELICOPTER EVENTS[/url][/h2]
 description=
-description= [h2]This sub-mod is not meant for a standard Zomboid experience! Enemies will sprint/do things that standard zombies do not - they are however balanced. [b]Back up your saves if you're uncertain![/b][/h2]
+description=[h2]This sub-mod is not meant for a standard Zomboid experience! Enemies will sprint/do things that standard zombies do not - they are however balanced. [b]Back up your saves if you're uncertain![/b][/h2]
 description=
-description= [img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=[img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][url=https://steamcommunity.com/workshop/filedetails/discussion/2458631365/3198117849827906428][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/FAQ.png[/img][/url][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/SteamDescSpacer.png[/img][url=https://steamcommunity.com/workshop/filedetails/discussion/2458631365/3198117849827912378][img]https://raw.githubusercontent.com/sharkster91/ExpandedHelicopterEvents/main/Contents/mods/Expanded%20Helicopter%20Events/FEATURES.png[/img][/url]
 description=
-description= [h2]Credits:[/h2]
-description= [h3]Consider supporting your favorite modders![/h3]
-description= [url=https://ko-fi.com/sharkmods]Shark [img]https://i.imgur.com/TO5DVAt.png[/img][/url] - Models, Art
-description= [url=https://ko-fi.com/chuckleberryfinn]Chuck [img]https://i.imgur.com/TO5DVAt.png[/img][/url] - Programming, Art
-description= Raven & Gabby - Sound, Voiceover
-description= [url=https://ko-fi.com/jadedp]Jade [img]https://i.imgur.com/TO5DVAt.png[/img][/url] - Voiceover
-description=
-description= [H1]To make suggestions, provide translations:
-description= Visit the [url=https://github.com/ChuckTheSheep/SuperWeirdHelicopterEvents]GITHUB[/url][/H1]
+description=[H1]To make suggestions, provide translations:
+description=Visit the [url=https://github.com/ChuckTheSheep/SuperWeirdHelicopterEvents]GITHUB[/url][/H1]
 description=
 description=
 description=[h1]If you're having an issue or encountering errors:[/h1]
