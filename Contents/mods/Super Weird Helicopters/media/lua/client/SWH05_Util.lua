@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.2-totallyNotMP"))
+Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.3"))
