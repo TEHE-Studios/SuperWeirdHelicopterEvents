@@ -50,7 +50,7 @@ eHelicopter_PRESETS["UFO"] = {
 	scrapItems = false,
 	scrapVehicles = false,
 	addedCrashChance = 33,
-	flightHours = {19,24},
+	flightHours = {20,27},
 	announcerVoice = "Aliens",
 	eventMarkerIcon = "media/ui/markerUFO.png",
 	eventSoundEffects = {["flightSound"] = "AlienUFOFlight"},
