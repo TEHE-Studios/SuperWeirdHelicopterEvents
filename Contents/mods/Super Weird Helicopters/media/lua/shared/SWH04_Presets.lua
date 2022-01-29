@@ -179,7 +179,7 @@ eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
 
 eHelicopter_PRESETS["helikopter (copyrighted)"] = {
-	inherit = {"raider_heli_aggressive"},
+	inherit = {"raider_heli_harasser"},
 	eventSoundEffects = {
 		["flightSound"] = "eMiliHeli",
 		["attackSingle"] = "eHeliM16GunfireSingle",
