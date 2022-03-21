@@ -32,10 +32,13 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 	eventCutOffDayFactor = 1,
 }
 
-eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {}
+eHelicopter_PRESETS["Spiffocopter_inviteOnly"] = {
+	inherit = {"Spiffocopter"},
+}
 
 eHelicopter_PRESETS["Spiffocopter_partyTime"] = {
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	inherit = {"Spiffocopter"},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 }
 
 
@@ -46,7 +49,7 @@ eHelicopter_PRESETS["UFO"] = {
 	hoverOnTargetDuration = {1000,1225},
 	speed = 10,
 	topSpeedFactor = 2,
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapItems = false,
 	scrapVehicles = false,
 	addedCrashChance = 33,
@@ -62,7 +65,7 @@ eHelicopter_PRESETS["UFO"] = {
 
 eHelicopter_PRESETS["UFOTourists"] = {
 	inherit = {"UFO"},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"AlienTourist",100,0,
 			"AlienTourist",75,0,
 			"AlienTourist",30,0,
@@ -72,7 +75,7 @@ eHelicopter_PRESETS["UFOTourists"] = {
 
 eHelicopter_PRESETS["UFORednecks"] = {
 	inherit = {"UFO"},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crashType = {"UFORedneck"},
 	crew = {"AlienRedneck",100,0,
 			"AlienRedneck",75,0,
@@ -83,7 +86,7 @@ eHelicopter_PRESETS["UFORednecks"] = {
 
 eHelicopter_PRESETS["UFOFratBoys"] = {
 	inherit = {"UFO"},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"AlienBeefo",100,0,
 			"AlienBeefo",75,0,
 			"AlienBeefo",30,0,
@@ -120,7 +123,7 @@ eHelicopter_PRESETS["IRS"] = {
 		["attackLooped"] = "eHeli_bolt_action_fire_single",
 		["flightSound"] = "eHelicopter",
 	},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	announcerVoice = "IRS",
 	forScheduling = true,
 	eventSpawnWeight = 4,
@@ -130,14 +133,14 @@ eHelicopter_PRESETS["IRS"] = {
 
 eHelicopter_PRESETS["IRS_Wave1"] = {
 	inherit = {"IRS"},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,},
 }
 
 eHelicopter_PRESETS["IRS_Wave2"] = {
 	inherit = {"IRS"},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0, "TaxMan",50,0,
@@ -146,7 +149,7 @@ eHelicopter_PRESETS["IRS_Wave2"] = {
 
 eHelicopter_PRESETS["IRS_Wave3"] = {
 	inherit = {"IRS"},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	crew = {"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
 			"TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0, "TaxMan",100,0,
@@ -167,7 +170,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 			"RobertJohnson",25,0,
 			"RobertJohnson",25,0, },
 	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy",},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapAndParts = false,
 	forScheduling = true,
 	eventSpawnWeight = 2,
@@ -206,7 +209,7 @@ eHelicopter_PRESETS["sandyclaws"] = {
 		["attackLooped"] = "eHeliM16GunfireSingle",
 		["additionalFlightSound"] = "JangleBalls",
 	},
-	addedFunctionsToEvents = {["OnHover"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 6,

@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.3.4-Server-Side-SWH"))
+Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.3.5-SpiffoFix"))
