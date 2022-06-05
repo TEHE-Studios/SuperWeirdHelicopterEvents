@@ -1,25 +1,3 @@
-require "luautils"
-local function setZombieSpeed(zombie, speedVal)
-	--TODO: Figure out how to get this to work outside of debug
-	--[[
-	for i = 0, getNumClassFields(zombie) - 1 do
-		---@type Field
-		local javaField = getClassField(zombie, i)
-		if javaField then
-			if luautils.stringEnds(tostring(javaField), '.' .. "speedType") then
-				print("-EHE:SWH: javaField: "..tostring(javaField))
-				if not javaField.setInt then
-					print("-EHE:SWH: setZombieSpeed: ERROR: javaField.setInt not found.")
-					return
-				else
-					javaField:setInt(zombie,speedVal)
-				end
-			end
-		end
-	end
-	]]
-end
-
 local group = AttachedLocations.getGroup("Human")
 group:getOrCreateLocation("Special Zombie AI"):setAttachmentName("special_zombie_AI")
 
@@ -120,16 +98,11 @@ function eHelicopter_zombieAI.onUpdate_gottaGoFast(zombie, apply)
 	if not zombie then
 		return
 	end
+
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: gottaGoFast")
-
-		if zombie.changeSpeed then
-			zombie:changeSpeed(1)
-		end
-
-		setZombieSpeed(zombie,1)
-		zombie:DoZombieStats()
 	else
+		zombie:setWalkType("sprint1")
 		if zombie:isCrawling() then
 			zombie:toggleCrawling()
 		end
@@ -144,18 +117,13 @@ function eHelicopter_zombieAI.onUpdate_licking(zombie, apply)
 	if not zombie then
 		return
 	end
+
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: licking")
 		zombie:setNoTeeth(true)
 
-		if zombie.changeSpeed then
-			zombie:changeSpeed(1)
-		end
-
-		setZombieSpeed(zombie,1)
-		zombie:DoZombieStats()
-
 	else
+		zombie:setWalkType("sprint1")
 		if (not zombie:isDead()) and (not zombie:isOnFloor()) and zombie:isAttacking() then
 			---@type BaseCharacterSoundEmitter | BaseSoundEmitter | FMODSoundEmitter
 			local zombieEmitter = zombie:getEmitter()
@@ -181,20 +149,15 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	if not zombie then
 		return
 	end
+
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
-
-		if zombie.changeSpeed then
-			zombie:changeSpeed(2)
-		end
-
-		setZombieSpeed(zombie,2)
-		zombie:DoZombieStats()
 		zombie:setHealth(zombie:getHealth()*100)
 		zombie:setReanimatedPlayer(false)
 
 	else
+		zombie:setWalkType("slow1")
 		zombie:setCanWalk(true)
 
 		if zombie:isCrawling() then
