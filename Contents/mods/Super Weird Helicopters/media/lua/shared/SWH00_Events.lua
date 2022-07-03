@@ -26,9 +26,7 @@ function eHelicopter_dropCrewOff(heli)
 	y = y+yOffset
 
 	--[[DEBUG]] print("SWH: DEBUG: eHelicopter_dropCrewOff: "..x..","..y)
-	for k,v in pairs(heli.crew) do
-		print(" -- k:"..tostring(k).." -- ("..tostring(v)..")")
-	end
+	--for k,v in pairs(heli.crew) do print(" -- k:"..tostring(k).." -- ("..tostring(v)..")") end
 
 	eventMarkerHandler.setOrUpdate(getRandomUUID(), "media/ui/crew.png", 750, x, y)
 	heli:spawnCrew(x, y, 0)
