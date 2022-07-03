@@ -109,16 +109,16 @@ module Base {
 
     sound AlienFratAck {
         category = EHE-Weird: Voice Lines, loop = false, is3D = true,
-        clip { file = media/sound/fratack1.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack2.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack3.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack4.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack5.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack6.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack7.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack8.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack9.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, }
-        clip { file = media/sound/fratack10.ogg, distanceMax = 300, volume = 0.06, reverbFactor = 0.1, } }
+        clip { file = media/sound/fratack1.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack2.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack3.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack4.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack5.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack6.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack7.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack8.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack9.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, }
+        clip { file = media/sound/fratack10.ogg, distanceMax = 300, volume = 1.0, reverbFactor = 0.1, } }
 
     sound SpiffoGiggle {
         category = Zombie, loop = false, is3D = true,
