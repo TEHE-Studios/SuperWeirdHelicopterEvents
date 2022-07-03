@@ -82,6 +82,9 @@ eHelicopter_PRESETS["UFORednecks"] = {
 			"AlienRedneck",30,0,
 			"AlienRedneck",15,0,
 			"AlienRedneck",5,0, },
+	eventSoundEffects = {
+		["flightSound"] = "RedNeckAlienUFOFlight",
+	},
 }
 
 eHelicopter_PRESETS["UFOFratBoys"] = {
