@@ -25,7 +25,7 @@ module Base
 
 		skin
 		{
-			texture = Vehicles/EHE/Vehicle_MCSupplyDrop,
+			texture = Vehicles/SWH/Vehicle_MCSupplyDrop,
 		}
 
 		textureMask = Vehicle_FEMASupplyDrop_mask,

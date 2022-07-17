@@ -68,14 +68,14 @@ VehicleDistributions.UFOTrunk = {
 VehicleDistributions.UFORedneckSeat = {
     rolls = 6,
     items ={
-        "EHE.AlienBlaster", 4,
-        "EHE.AlienBlaster", 3,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
-        "EHE.AlienPowerCells", 10,
+        "SWH.AlienBlaster", 4,
+        "SWH.AlienBlaster", 3,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
+        "SWH.AlienPowerCells", 10,
     }
 }
 
