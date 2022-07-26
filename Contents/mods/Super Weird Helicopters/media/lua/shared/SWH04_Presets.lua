@@ -63,6 +63,13 @@ eHelicopter_PRESETS["UFO"] = {
 	eventCutOffDayFactor = 1,
 }
 
+eHelicopter_PRESETS["UFO_noHover"] = {
+	inherit = {"UFO"},
+	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1,"UFOFratBoys",1,},
+	hoverOnTargetDuration = false,
+	forScheduling = false,
+}
+
 eHelicopter_PRESETS["UFOTourists"] = {
 	inherit = {"UFO"},
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
