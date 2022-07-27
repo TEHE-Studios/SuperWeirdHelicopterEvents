@@ -225,3 +225,35 @@ eHelicopter_PRESETS["sandyclaws"] = {
 	eventSpawnWeight = 6,
 	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,25}}}
 }
+
+
+eHelicopter_PRESETS["attackofthestrippers"] = {
+	speed = 2.5,
+	crew = {"CowboyStripper",100,0,
+			"CowboyStripper",100,0,
+			"CowboyStripper",100,0,
+			"CowboyStripper",100,0,
+			"CowboyStripper",100,0,
+			"CowboyStripper",50,0,
+			"CowboyStripper",50,0,
+			"CowboyStripper",50,0,
+			"FiremanStripper",100,0,
+			"FiremanStripper",100,0,
+			"FiremanStripper",100,0,
+			"FiremanStripper",100,0,
+			"FiremanStripper",100,0,
+			"FiremanStripper",50,0,
+			"FiremanStripper",50,0,
+			"FiremanStripper",50,0,
+},
+	hoverOnTargetDuration = {1250,1500},
+	eventSoundEffects = {
+		["flightSound"] = "eMiliHeli",
+		["additionalFlightSound"] = "assBlastUSA"
+	},
+	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
+	forScheduling = true,
+	eventCutOffDayFactor = 1,
+	eventSpawnWeight = 6,
+	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,31}}}
+}
