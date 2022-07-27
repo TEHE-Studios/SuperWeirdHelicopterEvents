@@ -63,12 +63,18 @@ eHelicopter_PRESETS["UFO"] = {
 	eventCutOffDayFactor = 1,
 }
 
+eHelicopter_PRESETS["UFO_noHoverBackEnd"] = {
+	doNotListForTwitchIntegration = true,
+	forScheduling = false,
+	crew = {"AlienTourist",100,0, "AlienTourist",10,0, "AlienTourist",5,0,},
+}
 eHelicopter_PRESETS["UFO_noHover"] = {
-	inherit = {"UFO"},
+	inherit = {"UFO", "UFO_noHoverBackEnd_DoNotUse"},
 	presetRandomSelection = {"UFOTourists",4,"UFORednecks",1,"UFOFratBoys",1,},
 	hoverOnTargetDuration = false,
 	forScheduling = false,
 }
+
 
 eHelicopter_PRESETS["UFOTourists"] = {
 	inherit = {"UFO"},
