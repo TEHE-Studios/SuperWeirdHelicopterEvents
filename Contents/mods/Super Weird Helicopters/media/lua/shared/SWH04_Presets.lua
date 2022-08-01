@@ -63,7 +63,7 @@ eHelicopter_PRESETS["UFO"] = {
 	eventCutOffDayFactor = 1,
 }
 
-eHelicopter_PRESETS["UFO_noHoverBackEnd"] = {
+eHelicopter_PRESETS["UFO_noHoverBackEnd_DoNotUse"] = {
 	doNotListForTwitchIntegration = true,
 	forScheduling = false,
 	crew = {"AlienTourist",100,0, "AlienTourist",10,0, "AlienTourist",5,0,},
