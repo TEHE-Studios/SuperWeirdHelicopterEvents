@@ -147,6 +147,12 @@ eHelicopter_PRESETS["IRS"] = {
 	eventCutOffDayFactor = 1,
 }
 
+eHelicopter_PRESETS["IRS_noHover"] = {
+	inherit = {"IRS"},
+	hoverOnTargetDuration = false,
+	forScheduling = false,
+}
+
 eHelicopter_PRESETS["IRS_Wave1"] = {
 	inherit = {"IRS"},
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
