@@ -237,7 +237,11 @@ eHelicopter_PRESETS["sandyclaws"] = {
 	eventSpawnWeight = 6,
 	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,25}}}
 }
-
+eHelicopter_PRESETS["sandyclaws_noHover"] = {
+	inherit = {"sandyclaws"},
+	hoverOnTargetDuration = false,
+	forScheduling = false,
+}
 
 eHelicopter_PRESETS["attackofthestrippers"] = {
 	speed = 2.5,
