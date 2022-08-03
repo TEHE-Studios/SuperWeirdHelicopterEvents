@@ -273,3 +273,8 @@ eHelicopter_PRESETS["attackofthestrippers"] = {
 	eventSpawnWeight = 6,
 	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,31}}}
 }
+eHelicopter_PRESETS["strippers_noHover"] = {
+	inherit = {"attackofthestrippers"},
+	hoverOnTargetDuration = false,
+	forScheduling = false,
+}
