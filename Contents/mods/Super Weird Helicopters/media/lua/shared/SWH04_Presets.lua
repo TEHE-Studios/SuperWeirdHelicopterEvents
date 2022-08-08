@@ -284,17 +284,18 @@ eHelicopter_PRESETS["strippers_noHover"] = {
 
 
 eHelicopter_PRESETS["buffcorell"] = {
-crashType = false,
-crew = {"EHESurvivorPilot", 100, 0},
-speed = 0.8,
-eventMarkerIcon = "media/ui/jet.png",
+	crashType = false,
+	crew = {"EHESurvivorPilot", 100, 0},
+	speed = 0.8,
+	eventMarkerIcon = "media/ui/jet.png",
 
-eventSoundEffects = {
-["flightSound"] = "ePropPlane",
-["additionalFlightSound"] = "buffcorell",
-},
+	eventSoundEffects = {
+		["flightSound"] = "ePropPlane",
+		["additionalFlightSound"] = "buffcorell",
+	},
 
-forScheduling = true,
-eventCutOffDayFactor = 1,
-eventSpawnWeight = 3,
-radioChatter = "AEBS_buffcorell"
+	forScheduling = true,
+	eventCutOffDayFactor = 1,
+	eventSpawnWeight = 3,
+	radioChatter = "AEBS_buffcorell"
+} 
