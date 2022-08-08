@@ -284,7 +284,7 @@ eHelicopter_PRESETS["strippers_noHover"] = {
 }
 
 
-eHelicopter_PRESETS["buffcorell (copyrighted)"] = {
+eHelicopter_PRESETS["buffcorrell (copyrighted)"] = {
 	crashType = false,
 	crew = {"EHESurvivorPilot", 100, 0},
 	speed = 0.8,
@@ -292,10 +292,10 @@ eHelicopter_PRESETS["buffcorell (copyrighted)"] = {
 
 	eventSoundEffects = {
 		["flightSound"] = "ePropPlane",
-		["additionalFlightSound"] = "buffcorell",
+		["additionalFlightSound"] = "buffcorrell",
 	},
 	forScheduling = false,
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 3,
-	radioChatter = "AEBS_buffcorell"
+	radioChatter = "AEBS_buffcorrell"
 } 
