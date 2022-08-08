@@ -284,7 +284,7 @@ eHelicopter_PRESETS["strippers_noHover"] = {
 }
 
 
-eHelicopter_PRESETS["buffcorell"] = {
+eHelicopter_PRESETS["buffcorell (copyrighted)"] = {
 	crashType = false,
 	crew = {"EHESurvivorPilot", 100, 0},
 	speed = 0.8,
