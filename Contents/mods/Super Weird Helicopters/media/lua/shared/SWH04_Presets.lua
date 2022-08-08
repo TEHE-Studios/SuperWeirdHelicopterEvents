@@ -207,6 +207,7 @@ eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
 eHelicopter_PRESETS["helikopter (copyrighted)"] = {
 	inherit = {"raider_heli_harasser"},
+	forScheduling = false,
 	eventSoundEffects = {
 		["flightSound"] = "eMiliHeli",
 		["attackSingle"] = "eHeliM16GunfireSingle",
@@ -293,8 +294,7 @@ eHelicopter_PRESETS["buffcorell"] = {
 		["flightSound"] = "ePropPlane",
 		["additionalFlightSound"] = "buffcorell",
 	},
-
-	forScheduling = true,
+	forScheduling = false,
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 3,
 	radioChatter = "AEBS_buffcorell"
