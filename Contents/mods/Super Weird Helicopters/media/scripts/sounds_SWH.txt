@@ -28,6 +28,14 @@ module Base {
         category = EHE: Main, loop = true, is3D = true,
         clip { file = media/sound/redneckUFO.ogg, distanceMax = 500, volume = 0.4, reverbFactor = 0.1, } }
 
+    sound buffcorell {
+        category = EHE: Main, loop = true, is3D = true,
+        clip { file = media/sound/buffcorellKelisMilkshake.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
+        clip { file = media/sound/buffcorellAHATakeOnMe.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
+        clip { file = media/sound/buffcorellCranberriesZombie.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
+        clip { file = media/sound/buffcorellEvanescenceWakeMeUpInside.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
+        clip { file = media/sound/buffcorellFriendsThemeSong.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, } }
+
     sound JangleBalls {
        category = Vehicle, loop = true, is3D = true,
        clip { file = media/sound/jangleballs.ogg, distanceMax = 750, reverbFactor = 0.1, } }

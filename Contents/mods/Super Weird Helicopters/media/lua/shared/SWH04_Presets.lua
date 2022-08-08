@@ -1,4 +1,5 @@
 require "ExpandedHelicopter02a_Presets"
+require "SWH00_Events"
 
 ---Preset list, only include variables being changed.
 ---variables can be found in Main Variables file, at the top, fields = variables
@@ -200,6 +201,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	eventCutOffDayFactor = 1,
 }
 
+
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
 
@@ -243,6 +245,7 @@ eHelicopter_PRESETS["sandyclaws_noHover"] = {
 	forScheduling = false,
 }
 
+
 eHelicopter_PRESETS["attackofthestrippers"] = {
 	speed = 2.5,
 	crew = {"CowboyStripper",100,0,
@@ -278,3 +281,20 @@ eHelicopter_PRESETS["strippers_noHover"] = {
 	hoverOnTargetDuration = false,
 	forScheduling = false,
 }
+
+
+eHelicopter_PRESETS["buffcorell"] = {
+crashType = false,
+crew = {"EHESurvivorPilot", 100, 0},
+speed = 0.8,
+eventMarkerIcon = "media/ui/jet.png",
+
+eventSoundEffects = {
+["flightSound"] = "ePropPlane",
+["additionalFlightSound"] = "buffcorell",
+},
+
+forScheduling = true,
+eventCutOffDayFactor = 1,
+eventSpawnWeight = 3,
+radioChatter = "AEBS_buffcorell"

@@ -1,0 +1,3 @@
+DynamicRadio_EN = {
+	AEBS_buffcorell = "yeah what's poppin' it's your boy buffcorell back at it at it at it again. esk. esk. esk esk. leeeeeeeeeet's get reeeady and. go."
+}
