@@ -289,11 +289,22 @@ eHelicopter_PRESETS["buffcorrell (copyrighted)"] = {
 	crew = {"EHESurvivorPilot", 100, 0},
 	speed = 0.8,
 	eventMarkerIcon = "media/ui/jet.png",
+	addedFunctionsToEvents = {["OnAttack"] = forceDance, ["OnLaunch"] = onLaunchClearDance,},
+
+	attackDelay = 1,
+	attackDistance = 700,
+	attackHitChance = 100,
+	attackDamage = 0,
+	hostilePreference = "IsoPlayer",
 
 	eventSoundEffects = {
+		["attackSingle"] = "IGNORE",
+		["attackLooped"] = "IGNORE",
+		["attackImpacts"] = "IGNORE",
 		["flightSound"] = "ePropPlane",
 		["additionalFlightSound"] = "buffcorrell",
 	},
+
 	forScheduling = false,
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 3,
