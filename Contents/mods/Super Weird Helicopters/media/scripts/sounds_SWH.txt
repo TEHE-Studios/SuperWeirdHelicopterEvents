@@ -30,11 +30,11 @@ module Base {
 
     sound buffcorrell {
         category = EHE: Main, loop = true, is3D = true,
-        clip { file = media/sound/buffcorrellKelisMilkshake.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
-        clip { file = media/sound/buffcorrellAHATakeOnMe.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
-        clip { file = media/sound/buffcorrellCranberriesZombie.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
-        clip { file = media/sound/buffcorrellEvanescenceWakeMeUpInside.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, }
-        clip { file = media/sound/buffcorrellFriendsThemeSong.ogg, distanceMax = 500, volume = 0.9, reverbFactor = 0.1, } }
+        clip { file = media/sound/buffcorrellKelisMilkshake.ogg, distanceMax = 750, volume = 2.0 }
+        clip { file = media/sound/buffcorrellAHATakeOnMe.ogg, distanceMax = 750, volume = 2.0 }
+        clip { file = media/sound/buffcorrellCranberriesZombie.ogg, distanceMax = 750, volume = 2.0 }
+        clip { file = media/sound/buffcorrellEvanescenceWakeMeUpInside.ogg, distanceMax = 750, volume = 2.0 }
+        clip { file = media/sound/buffcorrellFriendsThemeSong.ogg, distanceMax = 750, volume = 2.0 } }
 
     sound JangleBalls {
        category = Vehicle, loop = true, is3D = true,
