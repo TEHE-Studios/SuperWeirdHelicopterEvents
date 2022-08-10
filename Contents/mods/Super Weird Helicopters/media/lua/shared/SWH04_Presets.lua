@@ -296,6 +296,7 @@ eHelicopter_PRESETS["buffcorrell (copyrighted)"] = {
 	attackHitChance = 100,
 	attackDamage = 0,
 	hostilePreference = "IsoPlayer",
+	--hostilePreference = "IsoGameCharacter",
 
 	eventSoundEffects = {
 		["attackSingle"] = "IGNORE",

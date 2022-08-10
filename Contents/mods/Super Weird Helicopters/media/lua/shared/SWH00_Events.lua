@@ -94,16 +94,18 @@ local OrdinaryDance = {
 ---@param char IsoGameCharacter
 function forceDance(heli, char)
 	if not activeMods["TrueActionsDancing"] then return end
-	if instanceof(char, "IsoGameCharacter") and (not superWeirdForcedDancersAnim[char]) then
-		local dance = OrdinaryDance[ZombRand(#OrdinaryDance)+1]
-		local danceRecipe = string.gsub(dance, "_", " ")
 
-		if not char:isRecipeKnown(danceRecipe) then
-			char:getKnownRecipes():add(danceRecipe)
+	if instanceof(char, "IsoPlayer") then
+		local currentEmote = char:getVariableString("emote")
+		if (not superWeirdForcedDancersAnim[char]~=currentEmote) then
+			local dance = superWeirdForcedDancersAnim[char] or OrdinaryDance[ZombRand(#OrdinaryDance)+1]
+			local danceRecipe = string.gsub(dance, "_", " ")
+			if not char:isRecipeKnown(danceRecipe) then
+				char:getKnownRecipes():add(danceRecipe)
+			end
+			char:playEmote(dance)
+			superWeirdForcedDancersAnim[char] = dance
 		end
-
-		char:playEmote(dance)
-		superWeirdForcedDancersAnim[char] = dance
 	end
 end
 function onLaunchClearDance() superWeirdForcedDancersAnim = {} end
