@@ -205,9 +205,12 @@ eHelicopter_PRESETS["TISCreamery"] = {
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 
 
-eHelicopter_PRESETS["helikopter (copyrighted)"] = {
+eHelicopter_PRESETS["Helikopter"] = {
 	inherit = {"raider_heli_harasser"},
-	forScheduling = false,
+	forScheduling = true,
+	eventCutOffDayFactor = 1,
+	eventSpawnWeight = 1,
+	eventStartDayFactor = 0.044,
 	eventSoundEffects = {
 		["flightSound"] = "eMiliHeli",
 		["attackSingle"] = "eHeliM16GunfireSingle",
@@ -216,7 +219,7 @@ eHelicopter_PRESETS["helikopter (copyrighted)"] = {
 }
 
 
-eHelicopter_PRESETS["sandyclaws"] = {
+eHelicopter_PRESETS["SandyClaws"] = {
 	speed = 2,
 	crashType = {"UH1HSantaFuselage"},
 	scrapItems = {"EHE.UH1HHalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10,},
@@ -237,17 +240,18 @@ eHelicopter_PRESETS["sandyclaws"] = {
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
 	eventCutOffDayFactor = 1,
-	eventSpawnWeight = 6,
+	eventSpawnWeight = 3,
+	eventStartDayFactor = 0.044,
 	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,25}}}
 }
-eHelicopter_PRESETS["sandyclaws_noHover"] = {
-	inherit = {"sandyclaws"},
+eHelicopter_PRESETS["SandyClaws_noHover"] = {
+	inherit = {"SandyClaws"},
 	hoverOnTargetDuration = false,
 	forScheduling = false,
 }
 
 
-eHelicopter_PRESETS["attackofthestrippers"] = {
+eHelicopter_PRESETS["AttackOfTheStrippers"] = {
 	speed = 2.5,
 	crew = {"CowboyStripper",100,0,
 			"CowboyStripper",100,0,
@@ -274,17 +278,18 @@ eHelicopter_PRESETS["attackofthestrippers"] = {
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
 	eventCutOffDayFactor = 1,
-	eventSpawnWeight = 6,
+	eventSpawnWeight = 2,
+	eventStartDayFactor = 0.044,
 	eventSpecialDates = { systemDates = {{12}}, inGameDates = {{12,20}, {12,31}}}
 }
-eHelicopter_PRESETS["strippers_noHover"] = {
-	inherit = {"attackofthestrippers"},
+eHelicopter_PRESETS["AttackOfTheStrippers_noHover"] = {
+	inherit = {"AttackOfTheStrippers"},
 	hoverOnTargetDuration = false,
 	forScheduling = false,
 }
 
 
-eHelicopter_PRESETS["buffcorrell (copyrighted)"] = {
+eHelicopter_PRESETS["BuffCorrell"] = {
 	crashType = false,
 	crew = {"EHESurvivorPilot", 100, 0},
 	speed = 0.8,
@@ -306,8 +311,9 @@ eHelicopter_PRESETS["buffcorrell (copyrighted)"] = {
 		["additionalFlightSound"] = "buffcorrell",
 	},
 
-	forScheduling = false,
+	forScheduling = true,
 	eventCutOffDayFactor = 1,
-	eventSpawnWeight = 3,
+	eventStartDayFactor = 0.044,
+	eventSpawnWeight = 2,
 	radioChatter = "AEBS_buffcorrell"
 } 
