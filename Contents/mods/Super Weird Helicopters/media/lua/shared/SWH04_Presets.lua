@@ -20,7 +20,9 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 	hoverOnTargetDuration = {1000,1225},
 	scrapItems = {"EHE.Bell206HalfSkirt", "EHE.Bell206RotorBlade", 2, "EHE.Bell206TailBlade", 2, "Base.ScrapMetal", 10},
 	scrapVehicles = {"Bell206SpiffoTail"},
-	eventSoundEffects = {["flightSound"] = "eHelicopter"},
+	eventSoundEffects = {
+		["flightSound"] = "eHelicopter"
+	},
 	dropPackages = {"SpiffoBurger"},
 	announcerVoice = "Spiffo",
 	dropItems = {["SWH.SpiffoInvite"]=250},
@@ -57,7 +59,9 @@ eHelicopter_PRESETS["UFO"] = {
 	flightHours = {20,27},
 	announcerVoice = "Aliens",
 	eventMarkerIcon = "media/ui/markerUFO.png",
-	eventSoundEffects = {["flightSound"] = "AlienUFOFlight"},
+	eventSoundEffects = {
+		["flightSound"] = "AlienUFOFlight"
+	},
 	forScheduling = true,
 	eventSpawnWeight = 2,
 	eventStartDayFactor = 0.044,
@@ -110,8 +114,7 @@ eHelicopter_PRESETS["UFOFratBoys"] = {
 			"AlienBeefo",15,0,
 			"AlienBeefo",5,0, },
 	eventSoundEffects = {
-		["flightSound"] = "AlienUFOFlight",
-		["additionalFlightSound"] = "assBlastUSA"
+		["flightSound"] = { "AlienUFOFlight", "assBlastUSA" },
 	},
 	announcerVoice = "FratAliens",
 }
@@ -192,7 +195,9 @@ eHelicopter_PRESETS["TISCreamery"] = {
 			"RobertJohnson",50,0,
 			"RobertJohnson",25,0,
 			"RobertJohnson",25,0, },
-	eventSoundEffects = {["flightSound"] = "IceCreamFlyBy",},
+	eventSoundEffects = {
+		["flightSound"] = "IceCreamFlyBy",
+	},
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	scrapAndParts = false,
 	forScheduling = true,
@@ -212,10 +217,10 @@ eHelicopter_PRESETS["Helikopter"] = {
 	eventSpawnWeight = 1,
 	eventStartDayFactor = 0.044,
 	eventSoundEffects = {
-		["flightSound"] = "eMiliHeli",
+		["flightSound"] = { "eMiliHeli", "Helikopter" },
 		["attackSingle"] = "eHeliM16GunfireSingle",
 		["attackLooped"] = "eHeliM16GunfireSingle",
-		["additionalFlightSound"] = "Helikopter",}
+	}
 }
 
 
@@ -232,10 +237,9 @@ eHelicopter_PRESETS["SandyClaws"] = {
 	attackDamage = 10,
 	hostilePreference = "IsoPlayer",
 	eventSoundEffects = {
-		["flightSound"] = "eMiliHeli",
+		["flightSound"] = { "eMiliHeli", "JangleBalls" },
 		["attackSingle"] = "eHeliM16GunfireSingle",
 		["attackLooped"] = "eHeliM16GunfireSingle",
-		["additionalFlightSound"] = "JangleBalls",
 	},
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
@@ -272,8 +276,7 @@ eHelicopter_PRESETS["AttackOfTheStrippers"] = {
 },
 	hoverOnTargetDuration = {1250,1500},
 	eventSoundEffects = {
-		["flightSound"] = "eMiliHeli",
-		["additionalFlightSound"] = "assBlastUSA"
+		["flightSound"] = { "eMiliHeli", "assBlastUSA" },
 	},
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
@@ -307,8 +310,7 @@ eHelicopter_PRESETS["BuffCorrell"] = {
 		["attackSingle"] = "IGNORE",
 		["attackLooped"] = "IGNORE",
 		["attackImpacts"] = "IGNORE",
-		["flightSound"] = "ePropPlane",
-		["additionalFlightSound"] = "buffcorrell",
+		["flightSound"] = { "ePropPlane", "buffcorrell" },
 	},
 
 	forScheduling = true,
