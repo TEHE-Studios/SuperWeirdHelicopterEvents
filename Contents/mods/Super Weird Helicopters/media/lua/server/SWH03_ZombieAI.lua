@@ -315,12 +315,8 @@ end
 ---@param zombie IsoObject | IsoGameCharacter | IsoZombie
 ---@param player IsoObject | IsoGameCharacter | IsoPlayer
 function eHelicopter_zombieAI.onDead_gottaGoFast(zombie, player, bodyPart, weapon)
-	if ZombRand(100) <= 25 then
-		zombie:getInventory():AddItems("Base.AlienPowerCells", ZombRand(1,4))
-	end
-	if ZombRand(1000) <= 1 then
-		zombie:getInventory():AddItem("Base.AlienBlaster")
-	end
+	if ZombRand(100) <= 25 then zombie:getInventory():AddItems("SWH.AlienPowerCells", ZombRand(1,4)) end
+	if ZombRand(1000) <= 1 then zombie:getInventory():AddItem("SWH.AlienBlaster") end
 end
 
 
