@@ -31,7 +31,7 @@ eHelicopter_PRESETS["Spiffocopter"] = {
 			"SpiffoBoss",1,0,},
 	forScheduling = true,
 	eventSpawnWeight = 1,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
@@ -65,7 +65,7 @@ eHelicopter_PRESETS["UFO"] = {
 	},
 	forScheduling = true,
 	eventSpawnWeight = 2,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
@@ -149,7 +149,7 @@ eHelicopter_PRESETS["IRS"] = {
 	announcerVoice = "IRS",
 	forScheduling = true,
 	eventSpawnWeight = 4,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
@@ -205,7 +205,7 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	scrapAndParts = false,
 	forScheduling = true,
 	eventSpawnWeight = 2,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
@@ -217,7 +217,7 @@ eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
 eHelicopter_PRESETS["Helikopter"] = {
 	inherit = {"raider_heli_harasser"},
 	forScheduling = true,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 1,
 	eventStartDayFactor = 0.044,
@@ -238,7 +238,7 @@ eHelicopter_PRESETS["SandyClaws"] = {
 	hoverOnTargetDuration = {1250,1500},
 	attackDelay = 1700,
 	attackSpread = 4,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	attackHitChance = 55,
 	attackDamage = 10,
 	hostilePreference = "IsoPlayer",
@@ -286,7 +286,7 @@ eHelicopter_PRESETS["AttackOfTheStrippers"] = {
 	},
 	addedFunctionsToEvents = {["OnFlyaway"] = eHelicopter_dropCrewOff,["OnSpawnCrew"] = eHelicopter_crewSeek,},
 	forScheduling = true,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventCutOffDayFactor = 1,
 	eventSpawnWeight = 2,
 	eventStartDayFactor = 0.044,
@@ -321,7 +321,7 @@ eHelicopter_PRESETS["BuffCorrell"] = {
 	},
 
 	forScheduling = true,
-	markerColor = {r=0.91,g=0.21,b=0.78},
+	markerColor = {r=0.96,g=0.21,b=0.78},
 	eventCutOffDayFactor = 1,
 	eventStartDayFactor = 0.044,
 	eventSpawnWeight = 2,
