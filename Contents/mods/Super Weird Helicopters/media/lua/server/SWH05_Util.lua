@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.3.5-SpiffoFix"))
+Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.4 FEB_04_23"))
