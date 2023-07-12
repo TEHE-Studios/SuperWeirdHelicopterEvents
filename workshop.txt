@@ -5,7 +5,6 @@ description=[h2]THIS MOD REQUIRES [url=https://steamcommunity.com/sharedfiles/fi
 description=
 description=[h2]This sub-mod is not meant for a standard Zomboid experience! Enemies will sprint/do things that standard zombies do not - they are however balanced. [b]Back up your saves if you're uncertain![/b][/h2]
 description=
-description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 description=
 description=[H1]To make suggestions, provide translations:
 description=Visit the [url=https://github.com/ChuckTheSheep/SuperWeirdHelicopterEvents]GITHUB[/url][/H1]
