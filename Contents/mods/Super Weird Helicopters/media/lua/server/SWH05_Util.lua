@@ -1,1 +1,1 @@
-Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: ver:0.4 FEB_04_23"))
+Events.OnGameBoot.Add(print("Super-Weird Helicopter Events: AUG_03_23"))
