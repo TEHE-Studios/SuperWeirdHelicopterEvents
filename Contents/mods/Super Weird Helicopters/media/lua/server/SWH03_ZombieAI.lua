@@ -9,8 +9,8 @@ eHelicopter_zombieAI.outfitsToAI = {
 
 	["SpiffoBoss"] = "nemesis",
 
-	["RobertJohnson"] = "licking",
-	["Nasko"] = "sockThief",
+	--["RobertJohnson"] = "licking",
+	["RobertJohnson"] = "sockThief",
 
 	["TaxMan"] = "fodder",
 
@@ -75,6 +75,29 @@ function eHelicopter_zombieAI.onUpdate_licking(zombie, apply)
 			if (not eHelicopter_zombieAI.lickingTracker[zombie]) or (eHelicopter_zombieAI.lickingTracker[zombie] < getTimestampMs()) then
 				eHelicopter_zombieAI.lickingTracker[zombie] = getTimestampMs()+ZombRand(800,900)
 				zombie:playSound("ZombieLick")
+			end
+		end
+	end
+end
+
+
+---@param zombie IsoZombie | IsoGameCharacter | IsoObject | IsoMovingObject
+---@param apply boolean
+function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
+	if not zombie then return end
+
+	if apply then
+		zombie:setNoTeeth(true)
+	else
+		zombie:setWalkType("sprint1")
+		if (not zombie:isDead()) and (not zombie:isOnFloor()) and zombie:isAttacking() then
+			---@type BaseCharacterSoundEmitter | BaseSoundEmitter | FMODSoundEmitter
+			local zombieEmitter = zombie:getEmitter()
+			if zombieEmitter then
+				zombieEmitter:stopSoundByName("MaleZombieCombined")
+				zombieEmitter:stopSoundByName("FemaleZombieCombined")
+				zombieEmitter:stopSoundByName("MaleZombieHurt")
+				zombieEmitter:stopSoundByName("FemaleZombieHurt")
 			end
 		end
 	end
@@ -277,21 +300,64 @@ Events.OnZombieDead.Add(eHelicopter_zombieAI.onDead)
 
 ---@param zombie IsoObject | IsoGameCharacter | IsoZombie
 ---@param player IsoObject | IsoGameCharacter | IsoPlayer
-function eHelicopter_zombieAI.onHit_nemesis(zombie, player, bodypart, weapon)
+---@param handWeapon HandWeapon
+function eHelicopter_zombieAI.onHit_nemesis(player, zombie, handWeapon, damage)
 	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
-	if currentFireDamage >= eHelicopter_zombieAI.nemesis_burnTime then zombie:setHealth(0) end
+	if currentFireDamage >= eHelicopter_zombieAI.nemesis_burnTime then
+		zombie:setHealth(0)
+		zombie:setAttackedBy(getCell():getFakeZombieForHit())
+	else
+		zombie:setAvoidDamage(true)
+	end
 end
 
----@param zombie IsoObject | IsoGameCharacter | IsoZombie
----@param player IsoObject | IsoGameCharacter | IsoPlayer
-function eHelicopter_zombieAI.onHit(player, zombie, bodyPart, weapon)
-	if not zombie then return end
 
-	local AI = eHelicopter_zombieAI.checkForAI(zombie)
-	local specialAI = eHelicopter_zombieAI["onHit_"..AI]
-	if AI and specialAI then
-		specialAI(zombie, player, bodyPart, weapon)
+---@param attacker IsoObject | IsoGameCharacter | IsoZombie
+---@param target IsoObject | IsoGameCharacter | IsoPlayer
+---@param handWeapon HandWeapon
+function eHelicopter_zombieAI.onHit_nemesis(attacker, target, handWeapon, damage)
+	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[target] or 0
+	if currentFireDamage >= eHelicopter_zombieAI.nemesis_burnTime then
+		target:setHealth(0)
+		target:setAttackedBy(getCell():getFakeZombieForHit())
+	else
+		target:setAvoidDamage(true)
 	end
+end
+
+
+---@param attacker IsoObject | IsoGameCharacter | IsoZombie
+---@param target IsoObject | IsoGameCharacter | IsoPlayer
+---@param handWeapon HandWeapon
+function eHelicopter_zombieAI.onHit_sockThief(attacker, target, handWeapon, damage)
+	if (not attacker:getBumpedChr()) and (not attacker:isOnFloor()) and (not attacker:getVehicle()) then
+		attacker:setBumpedChr(target)
+		attacker:clearVariable("BumpFallType")
+		attacker:setBumpType("stagger")
+		attacker:setBumpDone(false)
+		attacker:setBumpFallType("pushedFront")
+	end
+end
+
+---@param attacker IsoObject | IsoGameCharacter | IsoZombie
+---@param target IsoObject | IsoGameCharacter | IsoPlayer
+---@param handWeapon HandWeapon
+function eHelicopter_zombieAI.onPlayerGetDamage_sockThief(attacker, target, handWeapon, damage)
+	if (not attacker:getBumpedChr()) and (not attacker:isOnFloor()) and (not attacker:getVehicle()) then
+		attacker:setBumpedChr(target)
+		attacker:clearVariable("BumpFallType")
+		attacker:setBumpType("stagger")
+		attacker:setBumpDone(false)
+		attacker:setBumpFallType("pushedFront")
+	end
+end
+
+---@param attacker IsoObject | IsoGameCharacter | IsoZombie
+---@param target IsoObject | IsoGameCharacter | IsoPlayer
+function eHelicopter_zombieAI.onHit(attacker, target, bodyPart, weapon)
+	local targetAI = eHelicopter_zombieAI.checkForAI(target)
+	local onGetHitEvent = targetAI and eHelicopter_zombieAI["onHit_"..targetAI]
+	if onGetHitEvent then onGetHitEvent(attacker, target, bodyPart, weapon) end
 end
 Events.OnWeaponHitCharacter.Add(eHelicopter_zombieAI.onHit)
 
