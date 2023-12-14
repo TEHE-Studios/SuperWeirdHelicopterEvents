@@ -10,6 +10,7 @@ eHelicopter_zombieAI.outfitsToAI = {
 	["SpiffoBoss"] = "nemesis",
 
 	["RobertJohnson"] = "licking",
+	["Nasko"] = "sockThief",
 
 	["TaxMan"] = "fodder",
 
@@ -28,14 +29,11 @@ end
 ---@param zombie IsoZombie | IsoGameCharacter | IsoObject
 ---@param apply boolean
 function eHelicopter_zombieAI.onUpdate_fodder(zombie, apply)
-	if not zombie then
-		return
-	end
+	if not zombie then return end
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: fodder")
 		zombie:setHealth(0.01)
-	else
-		--nothing on update
+		zombie:setAttackedBy(getCell():getFakeZombieForHit())
 	end
 end
 
@@ -43,17 +41,13 @@ end
 ---@param zombie IsoZombie | IsoGameCharacter | IsoObject
 ---@param apply boolean
 function eHelicopter_zombieAI.onUpdate_gottaGoFast(zombie, apply)
-	if not zombie then
-		return
-	end
+	if not zombie then return end
 
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: gottaGoFast")
 	else
 		zombie:setWalkType("sprint1")
-		if zombie:isCrawling() then
-			zombie:toggleCrawling()
-		end
+		if zombie:isCrawling() then zombie:toggleCrawling()end
 	end
 end
 
@@ -62,14 +56,11 @@ eHelicopter_zombieAI.lickingTracker = {}
 ---@param zombie IsoZombie | IsoGameCharacter | IsoObject | IsoMovingObject
 ---@param apply boolean
 function eHelicopter_zombieAI.onUpdate_licking(zombie, apply)
-	if not zombie then
-		return
-	end
+	if not zombie then return end
 
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: licking")
 		zombie:setNoTeeth(true)
-
 	else
 		zombie:setWalkType("sprint1")
 		if (not zombie:isDead()) and (not zombie:isOnFloor()) and zombie:isAttacking() then
