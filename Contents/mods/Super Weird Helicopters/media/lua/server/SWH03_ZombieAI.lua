@@ -99,6 +99,22 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 				zombieEmitter:stopSoundByName("MaleZombieHurt")
 				zombieEmitter:stopSoundByName("FemaleZombieHurt")
 			end
+
+			local target = zombie:getTarget()
+			if zombie and target and instanceof(target, "IsoPlayer") then
+				local player = target
+				if zombie:getDistanceSq(player) <= 0.66 then
+
+					if (not player:getBumpedChr()) and (not player:isOnFloor()) and (not player:getVehicle()) then
+						player:setBumpedChr(target)
+						player:clearVariable("BumpFallType")
+						player:setBumpType("stagger")
+						player:setBumpDone(false)
+						player:setBumpFall(true)
+						player:setBumpFallType("pushedFront")
+					end
+				end
+			end
 		end
 	end
 end
@@ -325,32 +341,6 @@ function eHelicopter_zombieAI.onHit_nemesis(attacker, target, handWeapon, damage
 	end
 end
 
-
----@param attacker IsoObject | IsoGameCharacter | IsoZombie
----@param target IsoObject | IsoGameCharacter | IsoPlayer
----@param handWeapon HandWeapon
-function eHelicopter_zombieAI.onHit_sockThief(attacker, target, handWeapon, damage)
-	if (not attacker:getBumpedChr()) and (not attacker:isOnFloor()) and (not attacker:getVehicle()) then
-		attacker:setBumpedChr(target)
-		attacker:clearVariable("BumpFallType")
-		attacker:setBumpType("stagger")
-		attacker:setBumpDone(false)
-		attacker:setBumpFallType("pushedFront")
-	end
-end
-
----@param attacker IsoObject | IsoGameCharacter | IsoZombie
----@param target IsoObject | IsoGameCharacter | IsoPlayer
----@param handWeapon HandWeapon
-function eHelicopter_zombieAI.onPlayerGetDamage_sockThief(attacker, target, handWeapon, damage)
-	if (not attacker:getBumpedChr()) and (not attacker:isOnFloor()) and (not attacker:getVehicle()) then
-		attacker:setBumpedChr(target)
-		attacker:clearVariable("BumpFallType")
-		attacker:setBumpType("stagger")
-		attacker:setBumpDone(false)
-		attacker:setBumpFallType("pushedFront")
-	end
-end
 
 ---@param attacker IsoObject | IsoGameCharacter | IsoZombie
 ---@param target IsoObject | IsoGameCharacter | IsoPlayer
