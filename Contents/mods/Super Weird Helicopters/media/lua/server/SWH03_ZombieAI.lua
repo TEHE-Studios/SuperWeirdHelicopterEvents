@@ -9,12 +9,13 @@ eHelicopter_zombieAI.outfitsToAI = {
 
 	["SpiffoBoss"] = "nemesis",
 
-	--["RobertJohnson"] = "licking",
-	["RobertJohnson"] = "sockThief",
+	["RobertJohnson"] = "licking",
+	["Nasko"] = "sockThief",
 
 	["TaxMan"] = "fodder",
 
 }
+
 
 ---@param zombie IsoZombie | IsoGameCharacter | IsoObject | IsoDeadBody
 function eHelicopter_zombieAI.checkForAI(zombie)
@@ -24,6 +25,7 @@ function eHelicopter_zombieAI.checkForAI(zombie)
 	local AI = zombieOutfit and eHelicopter_zombieAI.outfitsToAI[zombieOutfit]
 	return AI
 end
+
 
 
 ---@param zombie IsoZombie | IsoGameCharacter | IsoObject
@@ -90,7 +92,11 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 		zombie:setNoTeeth(true)
 	else
 		zombie:setWalkType("sprint1")
-		if (not zombie:isDead()) and (not zombie:isOnFloor()) and zombie:isAttacking() then
+
+		--(String, r, g, b, UIFont, scrambleF, TAG)
+		zombie:addLineChatElement("Nasko", 1, 1, 1, UIFont.NewSmall, 100, "default")
+
+		if (not zombie:isDead()) and (not zombie:isOnFloor()) then
 			---@type BaseCharacterSoundEmitter | BaseSoundEmitter | FMODSoundEmitter
 			local zombieEmitter = zombie:getEmitter()
 			if zombieEmitter then
@@ -102,8 +108,9 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 
 			local target = zombie:getTarget()
 			if zombie and target and instanceof(target, "IsoPlayer") then
+				---@type IsoPlayer | IsoGameCharacter | IsoObject | IsoMovingObject
 				local player = target
-				if zombie:getDistanceSq(player) <= 0.66 then
+				if zombie:getDistanceSq(player) <= 0.66 and zombie:getCurrentState() == AttackState.instance() then
 
 					if (not player:getBumpedChr()) and (not player:isOnFloor()) and (not player:getVehicle()) then
 						player:setBumpedChr(target)
@@ -112,6 +119,30 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 						player:setBumpDone(false)
 						player:setBumpFall(true)
 						player:setBumpFallType("pushedFront")
+
+						local playerWornItems = player:getWornItems()
+						if playerWornItems then
+							local socks, shoes
+							for i=0, playerWornItems:size()-1 do
+								local wornItem = playerWornItems:get(i)
+								local item = wornItem and wornItem:getItem()
+								if item then
+									if item:getBodyLocation()=="Socks" then socks = item end
+									if item:getBodyLocation()=="Shoes" then shoes = item end
+								end
+							end
+							if socks then
+								player:removeWornItem(socks)
+								player:getInventory():DoRemoveItem(socks)
+							end
+							if shoes then
+								player:removeWornItem(shoes)
+								player:getInventory():DoRemoveItem(shoes)
+								player:getSquare():AddWorldInventoryItem(shoes, 0, 0, 0)
+							end
+							zombie:playSound("sockThiefSniff")
+						end
+						zombie:pathToLocation(0,0,0)
 					end
 				end
 			end
@@ -276,6 +307,7 @@ function eHelicopter_zombieAI.reviveEventsLoop()
 	end
 end
 Events.OnTick.Add(eHelicopter_zombieAI.reviveEventsLoop)
+
 
 eHelicopter_zombieAI.nemesis_burnTime = 500
 ---@param zombie IsoObject | IsoGameCharacter | IsoZombie
