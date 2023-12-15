@@ -86,7 +86,7 @@ end
 ---@param zombie IsoZombie | IsoGameCharacter | IsoObject | IsoMovingObject
 ---@param apply boolean
 function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
-	if not zombie then return end
+	if not zombie and not zombie:isDead() then return end
 
 	if apply then
 		zombie:setNoTeeth(true)
@@ -96,7 +96,8 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 		--(String, r, g, b, UIFont, scrambleF, TAG)
 		zombie:addLineChatElement("Nasko", 1, 1, 1, UIFont.NewSmall, 100, "default")
 
-		if (not zombie:isDead()) and (not zombie:isOnFloor()) then
+		if (not zombie:isOnFloor()) then
+
 			---@type BaseCharacterSoundEmitter | BaseSoundEmitter | FMODSoundEmitter
 			local zombieEmitter = zombie:getEmitter()
 			if zombieEmitter then
@@ -121,28 +122,27 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 						player:setBumpFallType("pushedFront")
 
 						local playerWornItems = player:getWornItems()
-						if playerWornItems then
-							local socks, shoes
-							for i=0, playerWornItems:size()-1 do
-								local wornItem = playerWornItems:get(i)
-								local item = wornItem and wornItem:getItem()
-								if item then
-									if item:getBodyLocation()=="Socks" then socks = item end
-									if item:getBodyLocation()=="Shoes" then shoes = item end
-								end
+						if not playerWornItems then return end
+						local socks, shoes
+						for i=0, playerWornItems:size()-1 do
+							local wornItem = playerWornItems:get(i)
+							local item = wornItem and wornItem:getItem()
+							if item then
+								if item:getBodyLocation()=="Socks" then socks = item end
+								if item:getBodyLocation()=="Shoes" then shoes = item end
 							end
-							if socks then
-								player:removeWornItem(socks)
-								player:getInventory():DoRemoveItem(socks)
-							end
-							if shoes then
-								player:removeWornItem(shoes)
-								player:getInventory():DoRemoveItem(shoes)
-								player:getSquare():AddWorldInventoryItem(shoes, 0, 0, 0)
-							end
-							zombie:playSound("sockThiefSniff")
 						end
-						zombie:pathToLocation(0,0,0)
+						if socks then
+							player:removeWornItem(socks)
+							player:getInventory():DoRemoveItem(socks)
+						end
+						if shoes then
+							player:removeWornItem(shoes)
+							player:getInventory():DoRemoveItem(shoes)
+							player:getSquare():AddWorldInventoryItem(shoes, 0, 0, 0)
+						end
+						zombie:playSound("sockThiefSniff")
+						zombie:setForceEatingAnimation(true)
 					end
 				end
 			end
