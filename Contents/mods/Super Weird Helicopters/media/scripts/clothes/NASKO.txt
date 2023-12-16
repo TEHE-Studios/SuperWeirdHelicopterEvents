@@ -1,9 +1,0 @@
-module SWH
-{
-    item NASKO
-	{
-	Type = Clothing,
-	ClothingItem = NASKO,
-	BodyLocation=TankTop,
-	}
-}

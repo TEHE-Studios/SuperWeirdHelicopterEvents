@@ -10,7 +10,7 @@ eHelicopter_zombieAI.outfitsToAI = {
 	["SpiffoBoss"] = "nemesis",
 
 	["RobertJohnson"] = "licking",
-	["Nasko"] = "sockThief",
+	["SockConnoisseur"] = "sockThief",
 
 	["TaxMan"] = "fodder",
 
@@ -94,7 +94,7 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 		zombie:setWalkType("sprint1")
 
 		--(String, r, g, b, UIFont, scrambleF, TAG)
-		zombie:addLineChatElement("Nasko", 1, 1, 1, UIFont.NewSmall, 100, "default")
+		zombie:addLineChatElement("Sock Connoisseur", 1, 1, 1, UIFont.NewSmall, 100, "default")
 
 		if (not zombie:isOnFloor()) then
 

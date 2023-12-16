@@ -1,0 +1,10 @@
+module SWH
+{
+    item SockConnoisseur
+	{
+	DisplayName = "socky",
+	Type = Clothing,
+	ClothingItem = SockConnoisseur,
+	BodyLocation=TankTop,
+	}
+}

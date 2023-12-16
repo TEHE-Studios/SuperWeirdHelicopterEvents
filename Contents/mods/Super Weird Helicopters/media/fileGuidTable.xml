@@ -87,6 +87,11 @@
 	</files>
 
 	<files>
+		<path>media/clothing/clothingItems/SockConnoisseur.xml</path>
+		<guid>e9a59924-ca77-4ccb-a810-5420a5d5b10c</guid>
+	</files>
+
+	<files>
 	<path>media/clothing/clothingItems/TShirt_RJ.xml</path>
 	<guid>09003465-24fe-4648-8a34-19326b679d31</guid>
 	</files>
