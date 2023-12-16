@@ -107,6 +107,12 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 				zombieEmitter:stopSoundByName("FemaleZombieHurt")
 			end
 
+			if zombie:isForceEatingAnimation() then
+				if not zombieEmitter:isPlaying("sockThiefSniff") then
+					zombie:playSound("sockThiefSniff")
+				end
+			end
+
 			local target = zombie:getTarget()
 			if zombie and target and instanceof(target, "IsoPlayer") then
 				---@type IsoPlayer | IsoGameCharacter | IsoObject | IsoMovingObject
@@ -135,13 +141,13 @@ function eHelicopter_zombieAI.onUpdate_sockThief(zombie, apply)
 						if socks then
 							player:removeWornItem(socks)
 							player:getInventory():DoRemoveItem(socks)
+							player:getSquare():AddWorldInventoryItem(socks, 0, 0, 0)
 						end
 						if shoes then
 							player:removeWornItem(shoes)
 							player:getInventory():DoRemoveItem(shoes)
 							player:getSquare():AddWorldInventoryItem(shoes, 0, 0, 0)
 						end
-						zombie:playSound("sockThiefSniff")
 						zombie:setForceEatingAnimation(true)
 					end
 				end
