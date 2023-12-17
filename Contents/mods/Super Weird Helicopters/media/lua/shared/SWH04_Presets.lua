@@ -190,14 +190,9 @@ eHelicopter_PRESETS["IRS_Wave3"] = {
 
 
 eHelicopter_PRESETS["TISCreamery"] = {
+	presetRandomSelection = {"TISCreamery_RJ",2,"TISCreamery_Socks",1},
 	crashType = {"TISIceCreamTruck"},
 	hoverOnTargetDuration = {1000,1125},
-	crew = {"RobertJohnson",100,0,
-			"RobertJohnson",100,0,
-			"RobertJohnson",75,0,
-			"RobertJohnson",50,0,
-			"RobertJohnson",25,0,
-			"RobertJohnson",25,0, },
 	eventSoundEffects = {
 		["flightSound"] = "IceCreamFlyBy",
 	},
@@ -209,6 +204,22 @@ eHelicopter_PRESETS["TISCreamery"] = {
 	eventStartDayFactor = 0.044,
 	eventCutOffDayFactor = 1,
 }
+
+eHelicopter_PRESETS["TISCreamery_RJ"] = {
+	inherit = {"TISCreamery"},
+	crew = {"RobertJohnson",100,0,
+			"RobertJohnson",100,0,
+			"RobertJohnson",75,0,
+			"RobertJohnson",50,0,
+			"RobertJohnson",25,0,
+			"RobertJohnson",25,0, },
+}
+
+eHelicopter_PRESETS["TISCreamery_Socks"] = {
+	inherit = {"TISCreamery"},
+	crew = {"SockConnoisseur",100,0,},
+}
+
 
 
 eHelicopter_PRESETS.samaritan_drop.dropPackages = {"MCSupplyDrop"}
