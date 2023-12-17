@@ -168,7 +168,6 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	end
 
 	if apply then
-		print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
 		zombie:setReanimatedPlayer(false)
 
@@ -189,7 +188,6 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 		end
 
 		if currentFireDamage > eHelicopter_zombieAI.nemesis_burnTime then
-			print("BURN DAMAGE EXCEEDS")
 			zombie:setHealth(0)
 			zombie:setAttackedBy(getCell():getFakeZombieForHit())
 			--print("EHE:SWH:nemesis: zombie is crispy.")
@@ -271,7 +269,6 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 			zombie:getModData()["foreverTarget"] = choice
 		end
 		if (not zombie:getTarget()) and foreverTarget then
-			print("SETTING TARGET")
 			zombie:spotted(foreverTarget, true)
 		end
 
