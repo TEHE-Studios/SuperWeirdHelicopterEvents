@@ -1,3 +1,5 @@
+if isServer() then return end
+
 local eHelicopter_zombieAI = {}
 
 eHelicopter_zombieAI.outfitsToAI = {
@@ -166,11 +168,9 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	end
 
 	if apply then
-		--print("EHE:SWH:SZ:AI onApply: nemesis")
+		print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
-		--zombie:setHealth(100)
 		zombie:setReanimatedPlayer(false)
-		--zombie:setAttackedBy(getCell():getFakeZombieForHit())
 
 	else
 
@@ -189,6 +189,7 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 		end
 
 		if currentFireDamage > eHelicopter_zombieAI.nemesis_burnTime then
+			print("BURN DAMAGE EXCEEDS")
 			zombie:setHealth(0)
 			zombie:setAttackedBy(getCell():getFakeZombieForHit())
 			--print("EHE:SWH:nemesis: zombie is crispy.")
@@ -270,8 +271,8 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 			zombie:getModData()["foreverTarget"] = choice
 		end
 		if (not zombie:getTarget()) and foreverTarget then
+			print("SETTING TARGET")
 			zombie:spotted(foreverTarget, true)
-			zombie:setAttackedBy(getCell():getFakeZombieForHit())
 		end
 
 	end
@@ -354,13 +355,23 @@ Events.OnZombieDead.Add(eHelicopter_zombieAI.onDead)
 
 ---@param zombie IsoObject | IsoGameCharacter | IsoZombie
 ---@param player IsoObject | IsoGameCharacter | IsoPlayer
----@param handWeapon HandWeapon
+---@param handWeapon HandWeapon | InventoryItem
 function eHelicopter_zombieAI.onHit_nemesis(player, zombie, handWeapon, damage)
+
 	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
 	if currentFireDamage >= eHelicopter_zombieAI.nemesis_burnTime then
 		zombie:setHealth(0)
 	else
-		zombie:setHealth(100)
+
+		if ZombRand(4) < 1 then
+			---@type BaseSoundEmitter | FMODSoundEmitter
+			local zombieEmitter = zombie:getEmitter()
+			if not zombieEmitter:isPlaying("SpiffoGiggle") then zombieEmitter:playSound("SpiffoGiggle") end
+		end
+
+		if handWeapon:getFullType()~="Base.BareHands" then
+			zombie:setAvoidDamage(true)
+		end
 	end
 end
 
