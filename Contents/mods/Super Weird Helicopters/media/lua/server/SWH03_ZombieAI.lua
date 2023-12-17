@@ -168,19 +168,18 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 	if apply then
 		--print("EHE:SWH:SZ:AI onApply: nemesis")
 		zombie:setCanCrawlUnderVehicle(false)
-		zombie:setHealth(100)
-		zombie:setAttackedBy(getCell():getFakeZombieForHit())
+		--zombie:setHealth(100)
 		zombie:setReanimatedPlayer(false)
+		--zombie:setAttackedBy(getCell():getFakeZombieForHit())
 
 	else
+
 		zombie:setWalkType("slow1")
 		zombie:setCanWalk(true)
 
-		if zombie:isCrawling() then
-			zombie:toggleCrawling()
-		end
-		zombie:setHealth(100)
-		zombie:setAttackedBy(getCell():getFakeZombieForHit())
+		if zombie:isCrawling() then zombie:toggleCrawling() end
+		--zombie:setHealth(100)
+		--zombie:setAttackedBy(getCell():getFakeZombieForHit())
 
 		local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
 		if zombie:isOnFire() then
@@ -270,8 +269,9 @@ function eHelicopter_zombieAI.onUpdate_nemesis(zombie, apply)
 			end
 			zombie:getModData()["foreverTarget"] = choice
 		end
-		if foreverTarget then
+		if (not zombie:getTarget()) and foreverTarget then
 			zombie:spotted(foreverTarget, true)
+			zombie:setAttackedBy(getCell():getFakeZombieForHit())
 		end
 
 	end
@@ -359,23 +359,8 @@ function eHelicopter_zombieAI.onHit_nemesis(player, zombie, handWeapon, damage)
 	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[zombie] or 0
 	if currentFireDamage >= eHelicopter_zombieAI.nemesis_burnTime then
 		zombie:setHealth(0)
-		zombie:setAttackedBy(getCell():getFakeZombieForHit())
 	else
-		zombie:setAvoidDamage(true)
-	end
-end
-
-
----@param attacker IsoObject | IsoGameCharacter | IsoZombie
----@param target IsoObject | IsoGameCharacter | IsoPlayer
----@param handWeapon HandWeapon
-function eHelicopter_zombieAI.onHit_nemesis(attacker, target, handWeapon, damage)
-	local currentFireDamage = eHelicopter_zombieAI.nemesisFireDmgTracker[target] or 0
-	if currentFireDamage >= eHelicopter_zombieAI.nemesis_burnTime then
-		target:setHealth(0)
-		target:setAttackedBy(getCell():getFakeZombieForHit())
-	else
-		target:setAvoidDamage(true)
+		zombie:setHealth(100)
 	end
 end
 
