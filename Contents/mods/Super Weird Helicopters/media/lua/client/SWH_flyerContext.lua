@@ -1,4 +1,4 @@
-local paperContext = require "expandedHeliFlyersContextMenu"
+local paperContext = require "ExpandedHelicoptersFlyersContextMenu"
 
 paperContext.registerType("SWH.TenFortyForm")
 paperContext.registerType("SWH.SpiffoInvite")
